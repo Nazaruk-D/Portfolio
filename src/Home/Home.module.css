@@ -1,0 +1,17 @@
+.HomeBlock {
+    height: 100vh;
+    background-color: aqua;
+}
+
+
+
+.text {
+    width: 400px;
+    background-color: #bbbbbb;
+}
+
+.photo {
+    width: 400px;
+    height: 400px;
+    background-color: #bbbbbb;
+}

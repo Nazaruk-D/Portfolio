@@ -1,0 +1,11 @@
+.expContainer {
+    display: flex;
+}
+
+.yearPlace {
+    width: 100px;
+}
+
+.text {
+    width: 350px;
+}

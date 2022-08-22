@@ -1,0 +1,15 @@
+.expContainer {
+    display: flex;
+}
+
+.yearPlace {
+    width: 100px;
+}
+
+.title {
+    background-color: green;
+}
+
+.text {
+    width: 350px;
+}

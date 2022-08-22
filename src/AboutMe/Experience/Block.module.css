@@ -1,0 +1,12 @@
+.blockContainer {
+    display: flex;
+    background-color: green;
+}
+
+.yearPlace {
+    width: 150px;
+}
+
+.text {
+    width: 350px;
+}

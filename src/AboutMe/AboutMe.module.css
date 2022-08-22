@@ -2,3 +2,33 @@
     height: 100vh;
     background-color: #71af71;
 }
+
+.aboutContainer{
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.title {
+    width: 100%;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px solid;
+}
+
+.info {
+    width: 500px;
+    background-color: green;
+}
+
+.expert {
+    width: 500px;
+    background-color: green;
+}

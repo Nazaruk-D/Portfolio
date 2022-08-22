@@ -1,0 +1,17 @@
+.distantBlock {
+    height: 40vh;
+    background-color: #5c5cd0;
+}
+
+.distantContainer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    background-color: #71af71;
+}

@@ -1,0 +1,18 @@
+.ContactContainer {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    background-color: #ffffff;
+    padding-left: 10px;
+}

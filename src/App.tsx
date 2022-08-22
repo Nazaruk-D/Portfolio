@@ -8,6 +8,7 @@ import Projects from "./Projects/Projects";
 import DistantWork from "./DistantWork/DistantWork";
 import Contacts from "./Contacts/Contacts";
 import Map from "./Map/Map";
+import Footer from "./Footer/Footer";
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Projects/>
             <Contacts/>
             <Map/>
+            <Footer/>
         </div>
     );
 }

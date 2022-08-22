@@ -1,5 +1,5 @@
 .aboutBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #71af71;
 }
 
@@ -9,8 +9,7 @@
     flex-direction: column;
 }
 .title {
-    width: 100%;
-    /*background-color: green;*/
+    background-color: green;
     display: flex;
     justify-content: center;
 }
@@ -18,17 +17,21 @@
 .aboutMe {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
     border: 1px solid;
 }
 
 .info {
-    width: 500px;
+    width: 470px;
     background-color: green;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .expert {
-    width: 500px;
+    width: 470px;
     background-color: green;
+    padding: 10px;
+    box-sizing: border-box;
 }

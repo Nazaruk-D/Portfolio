@@ -1,0 +1,16 @@
+.blockContainer {
+    display: flex;
+    background-color: green;
+}
+
+.yearPlace {
+    min-width: 120px;
+    max-width: 150px;
+}
+
+.text {
+    min-width: 160px;
+    max-width: 350px;
+    padding: 10px;
+    box-sizing: border-box;
+}

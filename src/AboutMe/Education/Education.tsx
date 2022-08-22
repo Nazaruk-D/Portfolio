@@ -1,23 +1,23 @@
 import React from 'react';
 import Block from "../Block/Block";
-import s from "./Experience.module.css"
+import s from "./Education.module.css"
 
 type ExperiencePropsType = {
     title: string
 }
 
-const Experience: React.FC<ExperiencePropsType> = ({title}) => {
+const Education: React.FC<ExperiencePropsType> = ({title}) => {
     return (
-        <div className={s.expContainer}>
+        <div className={s.eduContainer}>
             <h3 className={s.title}>{title}</h3>
-            <Block year={"2013-2016"} place={"PetroleumS"} title={"VED"}
+            <Block year={"2009-2013"} place={"BSEU"} title={"Marketing"}
                    description={"Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Poin dui orci, pretium eget fringilla sit amet, luctus a nisl"}/>
-            <Block year={"2013-2016"} place={"PetroleumS"} title={"VED"}
+            <Block year={"2009-2013"} place={"BSEU"} title={"Marketing"}
                    description={"Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Poin dui orci, pretium eget fringilla sit amet, luctus a nisl"}/>
-            <Block year={"2013-2016"} place={"PetroleumS"} title={"VED"}
+            <Block year={"2009-2013"} place={"BSEU"} title={"Marketing"}
                    description={"Poin dui orci, pretium eget fringilla sit amet, luctus a nisl. Poin dui orci, pretium eget fringilla sit amet, luctus a nisl"}/>
         </div>
     );
 };
 
-export default Experience;
+export default Education;

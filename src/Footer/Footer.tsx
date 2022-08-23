@@ -4,7 +4,7 @@ import s from "./Footer.module.css"
 const Footer = () => {
     return (
         <div className={s.blockFooter}>
-                <span>Copyright © 2019 CVIT. All Rights Reserved.</span>
+                <span>Copyright © 2022. All Rights Reserved. Dmitry Nazaruk</span>
         </div>
     );
 };

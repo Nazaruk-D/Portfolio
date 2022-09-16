@@ -22,3 +22,10 @@
     flex-wrap: wrap;
 
 }
+
+@media screen and (max-width: 1329px){
+    .skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}

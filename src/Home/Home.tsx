@@ -1,21 +1,24 @@
 import React from 'react';
 import s from "./Home.module.css"
-import sContainer from "../common/styles/Container.module.css"
-
 
 
 const Home = () => {
     return (<>
-        <div className={s.homeBlock}>
-            <div className={sContainer.container}>
-                <div className={s.text}>
-                    <span>Hi there</span>
-                    <h1>I am Dmitry Nazaruk</h1>
-                    <p>Frontend Developer</p>
+            <div className={s.homeBlock}>
+                {/*<img className={s.photo}*/}
+                {/*     src="http://themelooks.net/demo/cvit/wordpress/wp-content/uploads/2017/02/slider-01.jpg"*/}
+                {/*     alt="Snow"/>*/}
+                <div className={s.parentsText}>
+                    <div className={s.text}>
+                        <span className={s.greetings}><strong>Hi there</strong></span>
+                        <div className={s.name}><h2><strong>I</strong> am Dmitry Nazaruk</h2></div>
+                        <p className={s.front}><strong>Frontend Developer</strong></p>
+                        <div className={s.button}>
+                            <a href="#">LET'S TALK</a>
+                        </div>
+                    </div>
                 </div>
-                <div className={s.photo}></div>
             </div>
-        </div>
         </>
     );
 };

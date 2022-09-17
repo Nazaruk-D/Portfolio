@@ -6,9 +6,6 @@
 }
 
 .aboutContainer{
-    /*align-items: center;*/
-    /*justify-content: flex-start;*/
-    /*flex-direction: column;*/
 }
 
 .title {
@@ -46,6 +43,7 @@
     background-color: #303030;
 }
 
+
 .title::before,
 .title::after{
     content: " ";
@@ -54,6 +52,9 @@
     right: 0;
     margin: 0 auto;
 }
+
+
+
 
 .aboutMe {
     width: 100%;

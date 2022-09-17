@@ -1,7 +1,18 @@
 .header {
     height: 80px;
-    background-color: grey;
+    /*background-color: grey;*/
+    /*opacity: 0.1;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    -webkit-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
+    z-index: 999;
 }

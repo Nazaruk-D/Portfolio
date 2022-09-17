@@ -1,12 +1,13 @@
 .homeBlock {
     height: 100vh;
-    background-color: aqua;
+    /*background-color: aqua;*/
+    background-color: #dadada;
 }
 
 
 .text {
     width: 400px;
-    background-color: #bbbbbb;
+    background-color: white;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -14,8 +15,14 @@
 .photo {
     width: 400px;
     height: 400px;
-    background-color: #bbbbbb;
+    background-image: url(../common/img/myPhoto.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    /*background-color: white;*/
+
 }
+
 
 
 /*Медиа-запрос:*/

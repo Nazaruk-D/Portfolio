@@ -8,7 +8,9 @@
         return (
             <div className={s.aboutBlock}>
                 <div className={`${sContainer.container} ${s.aboutContainer}`}>
-                    <h2  className={s.title}>About me</h2>
+                    <div className={s.title}>
+                        <h2  >About me</h2>
+                    </div>
                     <div className={s.aboutMe}>
                         <div className={s.info}>
                             <h3>WHO AM I?</h3>

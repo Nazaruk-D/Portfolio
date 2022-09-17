@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import Header from "./Header/Header";
-import Home from "./Home/Home";
 import AboutMe from "./AboutMe/AboutMe";
 import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
-import DistantWork from "./DistantWork/DistantWork";
 import Contacts from "./Contacts/Contacts";
 import Map from "./Map/Map";
 import Footer from "./Footer/Footer";
+import Home from "./Home/Home";
+import {Hire} from "./Hire/Hire";
 
 function App() {
     return (
@@ -17,7 +17,7 @@ function App() {
             <Home/>
             <AboutMe/>
             <Skills/>
-            <DistantWork/>
+            <Hire/>
             <Projects/>
             <Contacts/>
             <Map/>

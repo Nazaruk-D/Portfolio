@@ -2,8 +2,10 @@ import React from 'react';
 import s from "./Home.module.css"
 import sContainer from "../common/styles/Container.module.css"
 
+
+
 const Home = () => {
-    return (
+    return (<>
         <div className={s.homeBlock}>
             <div className={sContainer.container}>
                 <div className={s.text}>
@@ -14,7 +16,10 @@ const Home = () => {
                 <div className={s.photo}></div>
             </div>
         </div>
+        </>
     );
 };
 
 export default Home;
+
+

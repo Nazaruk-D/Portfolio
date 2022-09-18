@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Nav.module.css'
+import Button from "../common/components/button/Button";
 
 const Nav = () => {
     return (
@@ -18,7 +19,9 @@ const Nav = () => {
                 <a href="">Projects</a>
                 <a href="">Contact</a>
                 <a href="">Download CV</a>
-                <span className={s.button}><a href="#">Hire me</a></span>
+                <span className={s.button}>
+                    <Button text={"Hire me"}/>
+                </span>
             </div>
         </div>
     );

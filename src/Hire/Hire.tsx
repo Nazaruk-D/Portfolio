@@ -33,9 +33,10 @@ export const Hire = () => {
             if (vantaEffect) vantaEffect.destroy()
         }
     }, [vantaEffect])
-    return <>
-        <div ref={myRef} className={s.vanta}>
+    return <div className={s.hire}>
+        <div className={s.distanceWork}>
             <DistantWork/>
         </div>
-    </>
+        <div ref={myRef} className={s.vanta}></div>
+    </div>
 }

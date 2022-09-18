@@ -5,75 +5,77 @@
     align-items: center;
 }
 
-.aboutContainer{
-}
-
-.title {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    color: #303030;
-    position: relative;
-}
-
-
-.title h2 {
-    position: relative;
-    margin-top: -7px;
-    margin-bottom: 0;
-    padding-bottom: 18px;
-    font-size: 36px;
-    line-height: 41px;
-    text-transform: uppercase;
-}
-
-.title::before {
-    bottom: 0;
-    width: 100px;
-    padding: 4px 0 5px;
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: #303030;
-    opacity: 0.67;
-}
-
-.title::after {
-    bottom: 5px;
-    width: 200px;
-    height: 1px;
-    background-color: #303030;
-}
-
-
-.title::before,
-.title::after{
-    content: " ";
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-}
-
-
-
-
 .aboutMe {
-    width: 100%;
+    width: 1170px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*border: 1px solid;*/
+    margin-top: 50px;
+}
+
+.info {
+    width: 48%;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.info h3 {
+    line-height: 1.1;
+    text-align: left;
+    font-size: 24px;
+}
+
+.titleAboutMe {
+    line-height: 1.1;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-style: normal;
+}
+
+.span {
+    font-weight: 700;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 0;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*border-color: #303030;*/
+    background-color: #303030;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*.button:hover {*/
+/*    color: #505050;*/
+/*}*/
+
+
+.expert {
+    width: 48%;
+    background-color: #f9f9f9;
+    /*padding: 10px;*/
+    box-sizing: border-box;
+}
+
+.eduExp {
+    margin-top: 30px;
+    width: 1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     /*border: 1px solid;*/
 }
 
-.info {
-    width: 470px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.expert {
-    width: 470px;
-    background-color: #f9f9f9;
-    padding: 10px;
-    box-sizing: border-box;
-}

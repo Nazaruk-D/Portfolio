@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Contact.module.css"
-import home from "./../../common/png/hose.png"
+import home from "../../assets/png/hose.png"
 
 export type ContactPropsType = {
     icon: string

@@ -1,0 +1,25 @@
+.button a {
+    text-transform: uppercase;
+    color: #303030;
+    text-decoration: none;
+    outline: 0;
+    border: 2px solid #303030;
+    padding:10px 20px;
+    background-color: transparent;
+    font-family: Raleway,sans-serif;
+    font-weight: 700;
+}
+
+.button a:hover {
+    color: #fff;
+}
+
+
+
+
+/*Медиа-запрос:*/
+/*@media screen and (max-width: 1129px) будет применяться данный медиа-запрос до тех пор, пока ширина экрана будет ниже 1129px{*/
+/*    .photo { указываем место, где хотим прописать медиа запрос*/
+/*        justify-content: center; заменится только justify-content, все отсальные стили будут применяться те же, что и прописаны в .photo*/
+/*    }*/
+/*}*/

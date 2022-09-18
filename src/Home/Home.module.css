@@ -3,13 +3,13 @@
     /*background-color: aqua;*/
     background-color: white;
     /*position: relative;*/
-    background-image: url("/src/common/img/myPhoto.jpg");
-    background-image: url("/src/common/img/myPhoto2.jpg");
+    /*background-image: url("/src/assets/img/myPhoto.jpg");*/
+    background-image: url("/src/assets/img/myPhoto2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     box-sizing: content-box;
-    display: block;
+    /*display: block;*/
     /*-webkit-text-size-adjust: 100%;*/
     /*background-attachment:fixed;*/
 }
@@ -40,6 +40,7 @@
     font-size: 18px;
     line-height: 1.42857143;
     color: #333;
+    margin-bottom: 36px;
 }
 
 
@@ -54,27 +55,6 @@
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-}
-
-.button {
-    margin-top: 32px;
-}
-
-.button a {
-    text-transform: uppercase;
-    color: #303030;
-    text-decoration: none;
-    outline: 0;
-    border: 2px solid #303030;
-    padding:10px 20px;
-    background-color: transparent;
-    font-family: Raleway,sans-serif;
-    font-weight: 700;
-}
-
-
-.button a:hover {
-    color: #fff;
 }
 
 

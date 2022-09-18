@@ -1,0 +1,44 @@
+.title {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    color: #303030;
+    position: relative;
+    margin-top: 10px;
+    /*margin-bottom: 30px;*/
+}
+
+.title h2 {
+    margin-top: -7px;
+    margin-bottom: 0;
+    padding-bottom: 18px;
+    font-size: 36px;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+
+.title::before {
+    bottom: 0;
+    width: 100px;
+    padding: 4px 0 5px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #303030;
+    opacity: 0.67;
+}
+
+.title::after {
+    bottom: 5px;
+    width: 200px;
+    height: 1px;
+    background-color: #303030;
+}
+
+.title::before,
+.title::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+

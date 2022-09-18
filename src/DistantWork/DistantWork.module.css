@@ -1,17 +1,23 @@
 .distantBlock {
-    height: 25vh;
+    min-height: 25vh;
     /*background-color: #5c5cd0;*/
+    /*position: absolute;*/
 }
 
 .distantContainer {
+    width: 100%;
+    position: absolute;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
     box-sizing: border-box;
+
 }
 
 .title {
     justify-content: center;
     align-items: center;
     background-color: #71af71;
+
 }

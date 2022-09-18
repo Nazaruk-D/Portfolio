@@ -11,8 +11,21 @@ export type BlockPropsType = {
 const Block: React.FC<BlockPropsType> = ({year, place, title, description}) => {
     return (
         <div className={s.blockContainer}>
-            <div className={s.yearPlace}>{year}<br/>{place}</div>
-            <div className={s.text}>{title}<br/> {description} </div>
+            <div>
+                <div className={s.yearText}>
+                    {year}
+                </div>
+                <div className={s.place}>
+                    <h4>{place}</h4>
+                </div>
+                <div className={s.reset}></div>
+            </div>
+            <div className={s.descr}>
+                <div><h4 className={s.text}>{title}</h4></div>
+                <div className={s.description}>{description}</div>
+
+            </div>
+
         </div>
     );
 };

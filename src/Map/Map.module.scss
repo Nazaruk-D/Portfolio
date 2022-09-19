@@ -1,0 +1,18 @@
+@import '../common/styles/sass/variables';
+
+.mapContainer {
+    height: 35vh;
+    background-color: red;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: black;
+        opacity: 0.2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+

@@ -1,16 +1,54 @@
-import React from 'react';
-import s from "./Map.module.css"
+import React, { useState } from 'react';
+import MapGL, {Image, Layer, Source} from '@urbica/react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import s from './Map.module.scss'
+import stork from '../assets/png/stork.png'
+
 
 const Map = () => {
+    const [viewport, setViewport] = useState({
+        latitude:  53.922576358032096,
+        longitude: 27.62559200554355,
+        zoom: 14
+    });
+    const data = {
+        type: 'FeatureCollection',
+        features: [
+            {
+                type: 'Feature',
+                properties: {},
+                geometry: {
+                    type: 'Point',
+                    coordinates: [27.62559200554355, 53.922576358032096]
+                }
+            }
+        ]
+    };
+
+    // const imageURL =
+    //     'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png';
+
     return (
         <div className={s.mapContainer}>
-            {/*<iframe className={s.map}*/}
-            {/*    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7686.010805115432!2d27.620608459853656!3d53.92346860731758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcefcfcb3ebdf%3A0x24224706bf5d6ae9!2svulica%20Makajonka%2012%2C%20Minsk!5e0!3m2!1sen!2sby!4v1661183979377!5m2!1sen!2sby"*/}
-            {/*    referrerPolicy="no-referrer-when-downgrade"></iframe>*/}
-            {/*<iframe src="https://my.atlistmaps.com/map/b177e141-4ca4-42ba-a8f0-e938669c2f57?share=true"*/}
-            {/*        allow="geolocation" width="100%" height="100%" frameBorder="0" scrolling="no"*/}
-            {/*        allowFullScreen></iframe>*/}
-
+            <MapGL
+                style={{ width: '100%', height: '35vh' }}
+                mapStyle='mapbox://styles/mapbox/light-v9'
+                accessToken={"pk.eyJ1IjoibmF6YXJ1ay1kIiwiYSI6ImNsODk2NGI1azA0MWQzcG4zaGNjYjdibXMifQ.tDSjX8uOrU35vU8aZ-04wQ"}
+                onViewportChange={setViewport}
+                {...viewport}
+            >
+                <Source id='point' type='geojson' data={data} />
+                <Image id='my-image' image={stork} />
+                <Layer
+                    id='image-layer'
+                    type='symbol'
+                    source='point'
+                    layout={{
+                        'icon-image': 'my-image',
+                        'icon-size': 0.25
+                    }}
+                />
+            </MapGL>
         </div>
     );
 };

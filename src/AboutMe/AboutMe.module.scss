@@ -28,20 +28,6 @@
             .span {
                 font-weight: 700;
             }
-            .button {
-                display: inline-block;
-                padding: 12px 30px;
-                color: $bgSecondColor;
-                border: 2px solid transparent;
-                border-radius: 0;
-                font-size: 18px;
-                line-height: 22px;
-                font-weight: 700;
-                text-transform: uppercase;
-                background-color: $textColor;
-                position: absolute;
-                cursor: pointer;
-            }
         }
         .expert {
             width: 48%;

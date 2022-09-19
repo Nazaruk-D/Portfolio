@@ -4,6 +4,7 @@ import sContainer from "../assets/styles/Container.module.css"
 import EduExp from "./EduExp/EduExp";
 import Title from "../common/components/title/Title";
 import ProgressBar from "../common/components/progressBar/ProgressBar";
+import SecondButton from "../common/components/button/SecondButton";
 
 
 const AboutMe = () => {
@@ -18,9 +19,7 @@ const AboutMe = () => {
                             sunt
                             veritatis totam velit, esse pariatur in minima nostrum harum dolorum perferendis
                             quasi.</p>
-                        <div>
-                            <button className={s.button}>Download MY CV</button>
-                        </div>
+                        <SecondButton text={"Download MY CV"}/>
                     </div>
                     <div className={s.expert}>
                         <h3 className={s.titleAboutMe}>EXPERT <span className={s.span}>IN</span></h3>

@@ -1,0 +1,101 @@
+@import '../common/styles/sass/variables';
+
+.mainBlock {
+  min-height: 50vh;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  .contactsBlock {
+    min-width: 50%;
+    min-height: 50vh;
+    background-color: $bgSecondColor;
+    display: flex;
+    justify-content: flex-end;
+
+    .contants {
+      //border: 3px solid red;
+      border-right: 1px solid rgba(1,1,1,0.1);
+      width: 65%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 10px;
+      box-sizing: border-box;
+
+      .links {
+        display: flex;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .feedbackFormBlock {
+
+    width: 50%;
+    min-height: 50vh;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    //padding: 10px;
+    box-sizing: border-box;
+
+    .form {
+      width: 65%;
+      height: 100%;
+      //border: 3px solid red;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+
+      .firstBlock {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+        .firstLevelInput {
+          width: 45%;
+          padding: 3px;
+          color: rgba(5, 8, 7, 0.5);
+        }
+      }
+
+      .secondBlock {
+        width: 80%;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 3px;
+        margin: 10px 0;
+        color: rgba(5, 8, 7, 0.5);
+      }
+
+      .textArea {
+        width: 79%;
+        color: rgba(5, 8, 7, 0.5);
+      }
+      .button {
+        width: 80%;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

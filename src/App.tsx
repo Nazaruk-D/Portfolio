@@ -17,6 +17,7 @@ function App() {
             <AboutMe/>
             <Hire/>
             <Projects/>
+            <Hire/>
             <Contacts/>
             <Map/>
             <Footer/>

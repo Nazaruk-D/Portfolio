@@ -3,7 +3,7 @@ import React, {useEffect, useRef, useState} from 'react'
 import BIRDS from 'vanta/dist/vanta.fog.min'
 // @ts-ignore
 import * as THREE from 'three'
-import s from './Hire.module.css'
+import s from './Hire.module.scss'
 import DistantWork from "../DistantWork/DistantWork";
 
 

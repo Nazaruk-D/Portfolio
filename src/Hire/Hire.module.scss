@@ -1,0 +1,31 @@
+@import '../common/styles/sass/variables';
+
+.hire {
+  position: relative;
+  min-height: 25vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  .distanceWork {
+    width: 100%;
+  }
+
+  .vanta {
+    position: absolute;
+    bottom: 0;
+    right: 0.09%;
+    /*left:0;*/
+    /*top:0;*/
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    border: 1px solid $textColor;
+  }
+}
+
+
+
+
+
+

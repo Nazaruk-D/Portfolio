@@ -1,38 +1,35 @@
+@import '../common/styles/sass/variables';
+
 .nav {
     width: 65%;
     display: flex;
-    justify-content: space-around;
-    /*position: relative;*/
+    justify-content: space-between;
+    align-items: center;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    &li {
+        padding: 15px 0 10px;
+        position: relative;
+        display: block;
+    }
+    & li a {
+        /*position: relative;*/
+        color: #303030;
+        text-transform: uppercase;
+        outline: 0;
+        line-height: 20px;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 14px;
+    }
+    .button {
+        align-content: center;
+    }
 }
 
-
-.nav li {
-    padding: 15px 0 10px;
-    position: relative;
-    display: block;
-}
-
-
-.nav a {
-    /*position: relative;*/
-    color: #303030;
-    text-transform: uppercase;
-    outline: 0;
-    line-height: 20px;
-    text-decoration: none;
-    font-family: Raleway, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-
-}
-
-.button {
-    margin-top: 14px;
-}
 
 
 /*.nav li a::before {*/

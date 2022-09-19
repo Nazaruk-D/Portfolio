@@ -1,0 +1,68 @@
+@import '../common/styles/sass/variables';
+
+.header {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 10px;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 999;
+
+  .mainBlock {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+
+    .info {
+      width: 30%;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      .logo {
+        //display:block;
+        background-image: url("../assets/img/logo.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        float: left;
+        padding: 15px 15px;
+        margin-right: 15px;
+
+      }
+
+      .textLogo {
+        .logoName {
+          font-family: Raleway, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          color: $textColor;
+          margin: 0;
+          font-size: 16px;
+          line-height: 22px;
+          text-transform: uppercase;
+        }
+
+        .logoInfo {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $textColor
+        }
+      }
+    }
+  }
+}
+
+

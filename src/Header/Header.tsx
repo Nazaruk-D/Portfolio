@@ -1,6 +1,8 @@
 import React from 'react';
-import s from './Header.module.css'
+import s from './Header.module.scss'
 import Nav from "../Nav/Nav";
+
+
 
 const Header = () => {
     return (
@@ -9,8 +11,8 @@ const Header = () => {
                 <div className={s.info}>
                     <div className={s.logo}></div>
                     <div className={s.textLogo}>
-                        <p className={s.logoName}>Dmitry <strong>Nazaruk</strong></p>
-                        <p className={s.logoInfo}><strong>Frontend</strong> Developer</p>
+                        <div className={s.logoName}>Dmitry <strong>Nazaruk</strong></div>
+                        <div className={s.logoInfo}><strong>Frontend</strong> Developer</div>
                     </div>
                 </div>
                 <Nav/>

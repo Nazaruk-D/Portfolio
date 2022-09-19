@@ -1,25 +1,28 @@
 import React from 'react';
-import s from "./Project.module.css"
+import s from "./Project.module.scss"
 
 
 export type ProjectPropsType = {
-    photo: string
-    alt: string
+    style: {
+        backgroundImage: string
+    }
     link: string
     name: string
     description: string
 }
 
 
-const Project: React.FC<ProjectPropsType> = ({photo, name, description,alt, link}) => {
+const Project: React.FC<ProjectPropsType> = ({name, description, link, style}) => {
     return (
         <div className={s.projectBlock}>
-            <div className={s.imgContainer}>
-                <a href={link}><img src={photo} alt={alt} className={s.photo}/></a>
-                {/*<a href={link}></a>*/}
+            <a href={link}>
+                <div className={s.imgContainer} style={style}></div>
+            </a>
+            <div className={s.textArea}>
+                <div className={s.nameProject}>{name}</div>
+                <div className={s.description}>{description}</div>
             </div>
-            <div>{name}</div>
-            <div>{description}</div>
+
         </div>
     );
 };

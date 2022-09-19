@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./ProgressBar.module.css"
+import s from "./ProgressBar.module.scss"
 
 type ProgressBarPropsType = {
     title: string
@@ -13,7 +13,7 @@ const ProgressBar: React.FC<ProgressBarPropsType> = ({percent,title,stylePercent
             <h4>{title}</h4>
             <div className={s.progress}>
                 <div className={s.progressbar} style={{width:`${stylePercent}`}}>
-                    <span>{percent}</span>
+                    <span className={s.percent}>{percent}</span>
                 </div>
             </div>
         </div>

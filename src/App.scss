@@ -1,3 +1,5 @@
+@import './src/common/styles/sass/variables';
+
 .App {
   /*text-align: center;*/
   /*  background-color: #f9f9f9;*/
@@ -6,7 +8,7 @@
 h1, h2, h3, h4, h5, p {
     font-family: Raleway, sans-serif;
     font-style: normal;
-    color: #303030;
+    color: $textColor;
 }
 
 p {

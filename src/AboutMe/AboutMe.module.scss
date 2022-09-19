@@ -1,0 +1,83 @@
+@import '../common/styles/sass/variables';
+
+.aboutBlock {
+    min-height: 100vh;
+    background-color: $bgColor;
+    display: flex;
+    align-items: center;
+    .aboutMe {
+        width: 1170px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        .info {
+            width: 48%;
+            background-color: $bgColor;
+            box-sizing: border-box;
+            .titleAboutMe {
+                line-height: 1.1;
+                text-align: left;
+                font-size: 24px;
+                font-weight: 400;
+                margin-top: 0;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+            .span {
+                font-weight: 700;
+            }
+            .button {
+                display: inline-block;
+                padding: 12px 30px;
+                color: $bgSecondColor;
+                border: 2px solid transparent;
+                border-radius: 0;
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 700;
+                text-transform: uppercase;
+                background-color: $textColor;
+                position: absolute;
+                cursor: pointer;
+            }
+        }
+        .expert {
+            width: 48%;
+            background-color: $bgColor;
+            box-sizing: border-box;
+            .titleAboutMe {
+                line-height: 1.1;
+                text-align: left;
+                font-size: 24px;
+                font-weight: 400;
+                margin-top: 0;
+                text-transform: uppercase;
+                font-style: normal;
+            }
+            .span {
+                font-weight: 700;
+            }
+        }
+        .eduExp {
+            margin-top: 30px;
+            width: 1170px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+
+/*.button:hover {*/
+/*    color: #505050;*/
+/*}*/
+
+
+
+
+
+

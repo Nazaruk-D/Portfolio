@@ -1,10 +1,10 @@
 import React from 'react';
-import s from "./Home.module.css"
+import s from "./Home.module.scss"
 import Button from "../common/components/button/Button";
 
 
 const Home = () => {
-    return (<>
+    return (
             <div className={s.homeBlock}>
                 <div className={s.parentsText}>
                     <div className={s.text}>
@@ -15,7 +15,6 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-        </>
     );
 };
 

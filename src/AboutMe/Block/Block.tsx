@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./Block.module.css"
+import s from "./Block.module.scss"
 
 export type BlockPropsType = {
     year: string
@@ -15,12 +15,11 @@ const Block: React.FC<BlockPropsType> = ({year, place, title, description}) => {
                 <div className={s.yearText}>
                     {year}
                 </div>
-                <div className={s.place}>
+                <div className={s.placeText}>
                     <h4>{place}</h4>
                 </div>
-                <div className={s.reset}></div>
             </div>
-            <div className={s.descr}>
+            <div className={s.mainInformation}>
                 <div><h4 className={s.text}>{title}</h4></div>
                 <div className={s.description}>{description}</div>
 

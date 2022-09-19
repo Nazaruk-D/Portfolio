@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./AboutMe.module.css"
+import s from "./AboutMe.module.scss"
 import sContainer from "../assets/styles/Container.module.css"
 import EduExp from "./EduExp/EduExp";
 import Title from "../common/components/title/Title";

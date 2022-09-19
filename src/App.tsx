@@ -1,8 +1,7 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Header from "./Header/Header";
 import AboutMe from "./AboutMe/AboutMe";
-import Skills from "./Skills/Skills";
 import Projects from "./Projects/Projects";
 import Contacts from "./Contacts/Contacts";
 import Map from "./Map/Map";
@@ -16,7 +15,6 @@ function App() {
             <Header/>
             <Home/>
             <AboutMe/>
-            {/*<Skills/>*/}
             <Hire/>
             <Projects/>
             <Contacts/>

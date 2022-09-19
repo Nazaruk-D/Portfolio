@@ -5,11 +5,16 @@ import Button from "../common/components/button/Button";
 const Nav = () => {
     return (
         <div className={s.nav}>
-            <a href="">Home</a>
-            <a href="">About me</a>
-            <a href="">Projects</a>
-            <a href="">Contact</a>
-            <a href="">Download CV</a>
+            <li><a href="">Home</a></li>
+            <li>  <a href="">About me</a></li>
+            <li> <a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+            <li> <a href="">Download CV</a></li>
+
+
+
+
+
             <span className={s.button}>
                 <Button text={"Hire me"}/>
             </span>

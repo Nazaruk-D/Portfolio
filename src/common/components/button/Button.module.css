@@ -4,17 +4,16 @@
     text-decoration: none;
     outline: 0;
     border: 2px solid #303030;
-    padding:10px 20px;
+    padding: 12px 22px;
     background-color: transparent;
-    font-family: Raleway,sans-serif;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
+    font-size: 18px;
 }
 
 .button a:hover {
     color: #fff;
 }
-
-
 
 
 /*Медиа-запрос:*/

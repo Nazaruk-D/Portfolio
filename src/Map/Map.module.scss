@@ -2,8 +2,9 @@
 
 .mapContainer {
     height: 35vh;
-    background-color: red;
+    background-color: $textColor;
     position: relative;
+
     &::after {
         position: absolute;
         content: "";
@@ -13,6 +14,29 @@
         left: 0;
         right: 0;
         bottom: 0;
+
     }
 }
+
+
+
+
+//.mapContainer {
+//    height: 35vh;
+//    background-color: red;
+//    position: relative;
+//
+//    &::after {
+//        position: absolute;
+//        content: "";
+//        background-color: black;
+//        opacity: 0.2;
+//        top: 0;
+//        left: 0;
+//        right: 0;
+//        bottom: 0;
+//    }
+//}
+
+
 

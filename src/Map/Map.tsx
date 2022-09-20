@@ -6,6 +6,19 @@ import stork from '../assets/png/stork.png'
 
 
 const Map = () => {
+
+    const [newPosition, setNewPosition] = useState<any>({position:"relative"})
+
+    const onMouseEnterHandler = () => {
+        setNewPosition({position:"revert"})
+    }
+
+    const onMouseLeaveHandler = () => {
+        setNewPosition({position:"relative"})
+    }
+
+
+
     const [viewport, setViewport] = useState({
         latitude:  53.922576358032096,
         longitude: 27.62559200554355,
@@ -29,9 +42,10 @@ const Map = () => {
     //     'https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/400px-Cat_silhouette.svg.png';
 
     return (
-        <div className={s.mapContainer}>
+        <div className={s.mapContainer} style={newPosition} onClick={onMouseEnterHandler} onMouseLeave={onMouseLeaveHandler}>
+            {/*<div className={s.info}>123123</div>*/}
             <MapGL
-                style={{ width: '100%', height: '35vh' }}
+                style={{ width: '100%', height: '35vh'}}
                 mapStyle='mapbox://styles/mapbox/light-v9'
                 accessToken={"pk.eyJ1IjoibmF6YXJ1ay1kIiwiYSI6ImNsODk2NGI1azA0MWQzcG4zaGNjYjdibXMifQ.tDSjX8uOrU35vU8aZ-04wQ"}
                 onViewportChange={setViewport}

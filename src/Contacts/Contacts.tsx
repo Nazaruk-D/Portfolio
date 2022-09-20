@@ -1,6 +1,6 @@
 import React from 'react';
 import s from "./Contacts.module.scss"
-import Contact from "./Contact/Contact";
+import ItemContact from "./Contact/Contact";
 import home from "../assets/png/hose.png"
 import phone from "../assets/png/phone.png"
 import message from "../assets/png/message.png"
@@ -14,15 +14,15 @@ const Contacts = () => {
         <div className={s.mainBlock}>
             <div className={s.contactsBlock}>
                 <div className={s.contants}>
-                    <h2>Contacts</h2>
-                    <Contact icon={home} description={"Republic of Belarus, Minsk, st. Makaenka 12B"}/>
-                    <Contact icon={phone} description={"+375(29) 356-23-08"}/>
-                    <Contact icon={message} description={"nazaruk-dima@mail.ru"}/>
+                    <h2 className={s.title}>Contact address</h2>
+                    <ItemContact icon={home} description={"Republic of Belarus, Minsk, st. Makaenka 12B"}/>
+                    <ItemContact icon={phone} description={"+375(29) 356-23-08"}/>
+                    <ItemContact icon={message} description={"nazaruk-dima@mail.ru"}/>
                     <div className={s.links}>
-                        <Contact icon={fb}/>
-                        <Contact icon={ln}/>
-                        <Contact icon={fb}/>
-                        <Contact icon={ln}/>
+                        <ItemContact icon={fb}/>
+                        <ItemContact icon={ln}/>
+                        <ItemContact icon={fb}/>
+                        <ItemContact icon={ln}/>
                     </div>
                 </div>
 

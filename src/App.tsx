@@ -8,6 +8,7 @@ import Footer from "./Footer/Footer";
 import Home from "./Home/Home";
 import {Hire} from "./Hire/Hire";
 import Map from "./Map/Map";
+import {IntermediateBlock} from "./IntermediateBlock/IntermediateBlock";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             <AboutMe/>
             <Hire/>
             <Projects/>
-            <Hire/>
+            {/*<Hire/>*/}
+            <IntermediateBlock/>
             <Contacts/>
             <Map/>
             <Footer/>

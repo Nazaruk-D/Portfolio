@@ -1,5 +1,5 @@
 import React from 'react';
-import s from "./Contact.module.css"
+import s from "./Contact.module.scss"
 import home from "../../assets/png/hose.png"
 
 export type ContactPropsType = {

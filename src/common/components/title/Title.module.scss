@@ -1,7 +1,10 @@
+@import '../../../common/styles/sass/variables';
+
+
 .title {
     font-family: "Raleway", sans-serif;
     font-style: normal;
-    color: #303030;
+    color: $textColor;
     position: relative;
     margin-top: 10px;
     & h2 {
@@ -18,14 +21,14 @@
         padding: 4px 0 5px;
         border-style: solid;
         border-width: 1px 0;
-        border-color: #303030;
+        border-color: $textColor;
         opacity: 0.67;
     }
     &::after {
         bottom: 5px;
         width: 200px;
         height: 1px;
-        background-color: #303030;
+        background-color: $textColor;
     }
     &::before,
     &::after{

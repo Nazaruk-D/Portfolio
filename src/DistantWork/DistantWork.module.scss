@@ -1,7 +1,15 @@
+@import '../common/styles/sass/variables';
+
+
 .distantBlock {
     min-height: 25vh;
     /*background-color: #5c5cd0;*/
-    /*position: absolute;*/
+    ///*position: absolute
+    @media screen and (max-width: 500px) {
+        min-height: 40vh;
+
+    }
+
     .distantContainer {
         width: 100%;
         position: absolute;
@@ -10,5 +18,11 @@
         align-items: center;
         padding: 10px;
         box-sizing: border-box;
+        @media screen and (max-width: $mediaWidth) {
+            align-items: center;
+        }
+        .title {
+
+        }
     }
 }

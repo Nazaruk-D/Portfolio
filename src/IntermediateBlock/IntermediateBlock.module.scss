@@ -24,11 +24,47 @@
     bottom: 0;
     z-index: 0;
   }
-  .button {
-    position: relative;
-    color: white;
-    border-color: white;
-    z-index: 1;
+  //.button {
+  //  position: relative;
+  //  color: white;
+  //  border-color: white;
+  //  z-index: 1;
+  //}
+  .react {
+    //background-image: url("../../src/assets/png/React.png");
+    //background-size: cover;
+    //position: absolute;
+    //top: 0;
+    //left: 0;
+    //right: 0;
+    //bottom: 0;
+    //z-index: 1;
+
+    //background-repeat: no-repeat;
+    //background-attachment: fixed;
+  }
+  //.redux {
+  //}
+  .logoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    //position: absolute;
+    //z-index: 1;
+    @media screen and (max-width: $mediaWidth) {
+      align-items: start;
+      justify-content: center;
+
+    }
+    & img {
+      height: 100px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      @media screen and (max-width: $mediaWidth) {
+        height: 60px
+      }
+    }
   }
 }
 

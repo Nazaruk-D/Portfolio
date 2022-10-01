@@ -18,7 +18,6 @@ const Map = () => {
     }
 
 
-
     const [viewport, setViewport] = useState({
         latitude:  53.922576358032096,
         longitude: 27.62559200554355,

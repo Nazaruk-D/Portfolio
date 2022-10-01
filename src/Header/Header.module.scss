@@ -21,6 +21,9 @@
     display: flex;
     justify-content: center;
     position: fixed;
+    @media screen and (max-width: $mediaWidth) {
+      width: 80%;
+    }
 
     .info {
       width: 30%;

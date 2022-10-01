@@ -9,6 +9,9 @@
 
   .distanceWork {
     width: 100%;
+    @media screen and (max-width: 500px) {
+      align-items: start;
+    }
   }
 
   .vanta {

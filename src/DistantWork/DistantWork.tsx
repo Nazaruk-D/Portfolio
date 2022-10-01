@@ -8,13 +8,12 @@ const DistantWork = () => {
     return (<>
         <div className={s.distantBlock}>
             <div className={`${sContainer.container} ${s.distantContainer}`}>
-                <div>
+                <div className={s.title}>
                     <Title title={"Considering remote work options"}/>
                 </div>
                 <div>
                     <Button text={"Hire me"}/>
                 </div>
-
             </div>
         </div>
         </>

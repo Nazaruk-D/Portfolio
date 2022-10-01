@@ -5,6 +5,7 @@ import BIRDS from 'vanta/dist/vanta.fog.min'
 import * as THREE from 'three'
 import s from './Hire.module.scss'
 import DistantWork from "../DistantWork/DistantWork";
+import Button from "../common/components/button/Button";
 
 
 export const Hire = () => {

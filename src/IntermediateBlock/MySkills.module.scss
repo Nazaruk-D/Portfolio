@@ -5,6 +5,7 @@
   min-height: 25vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: $textColor;
@@ -12,6 +13,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  flex-wrap: wrap;
   &::before {
     position: absolute;
     content: "";
@@ -24,38 +26,16 @@
     bottom: 0;
     z-index: 0;
   }
-  //.button {
-  //  position: relative;
-  //  color: white;
-  //  border-color: white;
-  //  z-index: 1;
-  //}
-  .react {
-    //background-image: url("../../src/assets/png/React.png");
-    //background-size: cover;
-    //position: absolute;
-    //top: 0;
-    //left: 0;
-    //right: 0;
-    //bottom: 0;
-    //z-index: 1;
-
-    //background-repeat: no-repeat;
-    //background-attachment: fixed;
-  }
-  //.redux {
-  //}
   .logoBlock {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
-    //position: absolute;
+    width: 80%;
+    flex-wrap: wrap;
     z-index: 1;
     @media screen and (max-width: $mediaWidth) {
       align-items: start;
       justify-content: center;
-
     }
     & img {
       height: 100px;
@@ -67,8 +47,6 @@
     }
   }
 }
-
-
 
 
 

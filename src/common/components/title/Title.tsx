@@ -7,11 +7,9 @@ type TitleProps = {
 
 const Title: React.FC<TitleProps> = (props) => {
     return (
-        <div>
             <div className={s.title}>
                 <h2>{props.title}</h2>
             </div>
-        </div>
     );
 };
 

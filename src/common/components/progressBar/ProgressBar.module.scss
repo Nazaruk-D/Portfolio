@@ -2,11 +2,10 @@
 
 
 .progressContainer {
-  &h4 {
-    text-transform: uppercase;
+  .title {
     margin: 0 0 5px;
+    text-transform: uppercase;
   }
-
   .progress {
     background-color: #e9e9e9;
     border-radius: 0;

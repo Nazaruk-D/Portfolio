@@ -1,86 +1,47 @@
 @import '../common/styles/sass/variables';
 
 .aboutBlock {
-    min-height: 100vh;
-    background-color: $bgColor;
-    display: flex;
-    align-items: center;
+  min-height: 100vh;
+  background-color: $bgColor;
+  display: flex;
+  align-items: center;
 
-    .aboutContainer{
-        flex-direction: column;
+  .aboutContainer {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .aboutMe {
+      width: 70%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      margin-top: 50px;
+      @media screen and (max-width: $mediaWidth) {
         width: 100%;
-        margin-top:15px;
-        margin-bottom: 15px;
+      }
 
-        .aboutMe {
-            width: 70%;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            margin-top: 50px;
-            @media screen and (max-width: $mediaWidth) {
-                width: 100%;
-            }
-            .infoExpertBlock{
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                .info {
-                    width: 48%;
-                    background-color: $bgColor;
-                    box-sizing: border-box;
-                    @media screen and (max-width: $mediaWidth) {
-                        width: 80%;
-                    }
-                    .titleAboutMe {
-                        line-height: 1.1;
-                        text-align: left;
-                        font-size: 24px;
-                        font-weight: 400;
-                        margin-top: 0;
-                        text-transform: uppercase;
-                        font-style: normal;
-                    }
-                    .span {
-                        font-weight: 700;
-                    }
-                }
-                .expert {
-                    width: 48%;
-                    background-color: $bgColor;
-                    box-sizing: border-box;
-                    @media screen and (max-width: $mediaWidth) {
-                        width: 80%;
-                        margin-top: 15px;
-                    }
-                    .titleAboutMe {
-                        line-height: 1.1;
-                        text-align: left;
-                        font-size: 24px;
-                        font-weight: 400;
-                        margin-top: 0;
-                        text-transform: uppercase;
-                        font-style: normal;
-                    }
-                    .span {
-                        font-weight: 700;
-                    }
-                }
-            }
-            .eduExp {
-                margin-top: 30px;
-                width: 100%;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
+      .infoExpertBlock {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
 
-            }
-        }
+      .eduExp {
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+      }
     }
+  }
 }
 
 

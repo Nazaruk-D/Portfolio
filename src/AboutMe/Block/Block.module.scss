@@ -5,7 +5,7 @@
     margin-top: 28px;
     min-height: 90px;
     width: 100%;
-    @media screen and (max-width: 1149px) {
+    @media screen and (max-width:$mediaWidth) {
         flex-direction: column;
         align-items: start;
     }
@@ -26,7 +26,7 @@
     }
     .mainInformation {
         width: 100%;
-        .text {
+        .title400 {
             min-width: 170px;
             max-width: 350px;
             align-items: flex-start;
@@ -52,6 +52,21 @@
                 right: 0;
                 margin: 0 auto;
             }
+        }
+        .title700 {
+            min-width: 170px;
+            max-width: 350px;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0 0 5px;
+            position: relative;
+            color: $textColor;
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            line-height: 1.1;
+            font-size: 18px;
+            text-transform: uppercase;
+
         }
         .description {
             font-family: Raleway, sans-serif;

@@ -10,7 +10,7 @@ type ProgressBarPropsType = {
 const ProgressBar: React.FC<ProgressBarPropsType> = ({percent,title,stylePercent}) => {
     return (
         <div className={s.progressContainer}>
-            <h4>{title}</h4>
+            <h4 className={s.title}>{title}</h4>
             <div className={s.progress}>
                 <div className={s.progressbar} style={{width:`${stylePercent}`}}>
                     <span className={s.percent}>{percent}</span>

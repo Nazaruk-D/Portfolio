@@ -26,6 +26,9 @@
     bottom: 0;
     z-index: 0;
   }
+  .title {
+    margin: 15px 0;
+  }
   .logoBlock {
     display: flex;
     align-items: center;
@@ -33,6 +36,7 @@
     width: 80%;
     flex-wrap: wrap;
     z-index: 1;
+
     @media screen and (max-width: $mediaWidth) {
       align-items: start;
       justify-content: center;

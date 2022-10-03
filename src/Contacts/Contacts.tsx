@@ -1,31 +1,61 @@
 import React from 'react';
 import s from "./Contacts.module.scss"
-import ItemContact from "./Contact/Contact";
-import home from "../assets/png/hose.png"
-import phone from "../assets/png/phone.png"
-import message from "../assets/png/message.png"
-import fb from "../assets/png/fb.png"
-import ln from "../assets/png/in.png"
+import Contact from "./Contact/Contact";
 import SecondButton from "../common/components/button/SecondButton";
+import {AiFillFacebook, AiFillLinkedin, AiOutlineHome, AiOutlineMail, AiOutlineYoutube} from "react-icons/ai";
+import {HiOutlinePhone} from "react-icons/hi";
+import {BsInstagram} from "react-icons/bs";
 
 
 const Contacts = () => {
+
+    const contacts = [
+        {
+            icon: <AiOutlineHome/>,
+            description: "Republic of Belarus, Minsk, st. Makaenka 12B"
+        },
+        {
+            icon: <HiOutlinePhone/>,
+            description: "+375(29) 356-23-08"
+        },
+        {
+            icon: <AiOutlineMail/>,
+            description: "nazaruk-dima@mail.ru"
+        },
+    ]
+    const social = [
+        {
+            icon: <AiFillFacebook/>,
+            link: "https://www.facebook.com/nazaruk.dima"
+        },
+        {
+            icon: <AiFillLinkedin/>,
+            link: "https://www.linkedin.com/in/dzmitry-nazaruk-959927163/"
+        },
+        {
+            icon: <BsInstagram/>,
+            link: "https://www.instagram.com/nazaruk_dzmitry/"
+        },
+        {
+            icon: <AiOutlineYoutube/>,
+            link: "https://www.youtube.com/channel/UCU3EioEIrdAYLmV4rNskdRw"
+        },
+    ]
+
     return (
         <div className={s.mainBlock}>
             <div className={s.contactsBlock}>
-                <div className={s.contants}>
+                <div className={s.contacts}>
                     <h2 className={s.title}>Contact address</h2>
-                    <ItemContact icon={home} description={"Republic of Belarus, Minsk, st. Makaenka 12B"}/>
-                    <ItemContact icon={phone} description={"+375(29) 356-23-08"}/>
-                    <ItemContact icon={message} description={"nazaruk-dima@mail.ru"}/>
+                    {
+                        contacts.map((c, index) => <Contact key={index} icon={c.icon} description={c.description}/>)
+                    }
                     <div className={s.links}>
-                        <ItemContact icon={fb}/>
-                        <ItemContact icon={ln}/>
-                        <ItemContact icon={fb}/>
-                        <ItemContact icon={ln}/>
+                        {
+                            social.map((s, index) => <Contact key={index} icon={s.icon} link={s.link}/>)
+                        }
                     </div>
                 </div>
-
             </div>
 
             <div className={s.feedbackFormBlock}>
@@ -42,7 +72,6 @@ const Contacts = () => {
 
                 </form>
             </div>
-
         </div>
     );
 };

@@ -38,7 +38,7 @@ const Projects = () => {
 
                     <Project
                         style={noname}
-                        link={"https://github.com/Nazaruk-D"} name={"No Name"}
+                        link={"https://github.com/Nazaruk-D"} name={"Counter"}
                         description={"A social networking is an online platform which people use to build social networks or social relationships with other people who share similar personal or career content, interests, activities, backgrounds or real-life connections."}/>
                 </div>
             </div>

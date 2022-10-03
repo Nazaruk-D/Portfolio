@@ -2,7 +2,6 @@ import React from 'react';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import s from "./Skill.module.scss"
 
-
 type SkillPropsType = {
     icon: any
     svgIcon: string | undefined

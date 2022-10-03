@@ -1,17 +1,11 @@
 import React from 'react'
 import s from "./MySkills.module.scss"
-import react from "../../src/assets/png/React.png"
-import redux from "../../src/assets/png/Redux.png"
-import js from "../../src/assets/png/JS.png"
-import html from "../../src/assets/png/HTML.png"
-import css from "../../src/assets/png/CSS.png"
 import {faCss3Alt, faGitAlt, faHtml5, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
 import reduxSvg from "../../src/assets/svg/redux.svg"
 import tsSvg from '../../src/assets/svg/TS.svg'
 import restSvg from '../../src/assets/svg/TS.svg'
 import storybookSvg from "../../src/assets/svg/storybook.svg";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import background from "../common/img/skillsBack.jpg";
+import jestSvg from "../../src/assets/svg/jest.svg";
 import {Skill} from "./Skill/Skill";
 import Title from "../common/components/title/Title";
 
@@ -53,13 +47,19 @@ export const MySkills = () => {
         {
             skill: 'Git',
             icon: faGitAlt
+        },
+        {
+            skill: 'TDD - JEST',
+            svg: jestSvg
         }
     ]
 
     const color = {color:"#f9f9f9"}
 
     return <div className={s.intermediateBlock}>
+        <div className={s.title}>
             <Title title={"My skills"} color={color}/>
+        </div>
         <div className={s.logoBlock}>
             {
                 skills.map(m =>

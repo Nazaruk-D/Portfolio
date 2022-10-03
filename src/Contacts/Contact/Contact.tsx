@@ -1,16 +1,21 @@
 import React from 'react';
 import s from "./Contact.module.scss"
-import home from "../../assets/png/hose.png"
+
 
 export type ContactPropsType = {
-    icon: string
+    icon: any
     description?: string
+    link?: string
 }
 
-const Contact: React.FC<ContactPropsType> = ({icon,description}) => {
+const Contact: React.FC<ContactPropsType> = ({icon, description, link}) => {
+
     return (
         <div className={s.ContactContainer}>
-            <div className={s.logo}><img src={icon} alt="icon"/></div>
+            {link
+                ? <a href={link}><div className={s.logoLink}>{icon}</div></a>
+                : <div className={s.logo}>{icon}</div>
+            }
             <div className={s.text}>{description}</div>
         </div>
     );

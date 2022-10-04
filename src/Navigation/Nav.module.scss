@@ -8,15 +8,14 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
-    //@media screen and (max-width: 1149px) {
-    //    flex-direction: column;
-    //    align-items: center;
-    //    width: 100%;
-    //}
+    @media screen and (max-width: $mediaWidth) {
+        display: none;
+    }
     &li {
         padding: 15px 0 10px;
         position: relative;
         display: block;
+
     }
     & li a {
         /*position: relative;*/
@@ -28,7 +27,7 @@
         font-family: Raleway, sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 18px;
+        font-size: 15px;
         //@media screen and (max-width: 1149px) {
         //    font-size: 14px;
         //}

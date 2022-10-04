@@ -1,0 +1,32 @@
+@import '../common/styles/sass/variables';
+
+.miniNav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    background-color: white;
+    padding-left: 10px;
+
+
+    box-sizing: border-box;
+    &li {
+        padding: 15px 0 10px;
+        position: relative;
+        display: block;
+
+    }
+    & li a {
+        color: $textColor;
+        text-transform: uppercase;
+        outline: 0;
+        line-height: 40px;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+    }
+}

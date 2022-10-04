@@ -11,20 +11,111 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: .25s;
-  -o-transition: .25s;
-  transition: .25s;
-  z-index: 999;
-
+  z-index: 5;
+  //background-color: green;
+  //-webkit-transition: .25s;
+  //-o-transition: .25s;
+  //transition: .25s;
+  //.header2 {
+  //  height: 15vh;
+  //}
 
   .mainBlock {
     width: 70%;
     display: flex;
     justify-content: center;
-    position: fixed;
+    align-items: center;
+    position: absolute;
     @media screen and (max-width: $mediaWidth) {
       width: 100%;
+      justify-content: space-around;
     }
+    .burgerContainer{
+      width: 35px;
+      height: 20px;
+      border: 1px solid black;
+      padding: 5px;
+      display: none;
+      @media screen and (max-width: $mediaWidth) {
+        display: block;
+      }
+      .burger {
+        display: none;
+        @media screen and (max-width: $mediaWidth) {
+          //border: 1px solid red;
+          margin: 4px;
+          display: block;
+          position: relative;
+          width: 25px;
+          height: 14px;
+          & span {
+            position: absolute;
+            background-color: $textColor;
+            left:0;
+            width: 100%;
+            height: 2px;
+            top: 6px;
+          }
+          &:before,
+          &:after {
+            content: "";
+            background-color: $textColor;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left:0;
+            transition: all 0.3s ease 0s;
+          }
+          &:before {
+            top: 0;
+          }
+          &:after {
+            bottom: 0;
+          }
+        }
+      }
+    }
+
+    .burgerContainerActive{
+      width: 35px;
+      height: 20px;
+      border: 1px solid black;
+      padding: 5px;
+      display: none;
+      @media screen and (max-width: $mediaWidth) {
+        display: block;
+      }
+      .burgerActive {
+        display: none;
+        @media screen and (max-width: $mediaWidth) {
+          //border: 1px solid red;
+          margin: 4px;
+          display: block;
+          position: relative;
+          width: 25px;
+          height: 14px;
+          &:before,
+          &:after {
+            content: "";
+            background-color: $textColor;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left:0;
+            transition: all 0.3s ease 0s;
+          }
+          &:before {
+            top: 6px;
+            transform: rotate(45deg);
+          }
+          &:after {
+            bottom: 6px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+
 
     .info {
       width: 30%;
@@ -45,11 +136,11 @@
         align-items: center;
 
         .img {
-          width: 65px;
+          width: 60px;
           border-radius: 50%;
           float: left;
           @media screen and (max-width: $mediaWidth) {
-            width: 55px;
+            width: 50px;
           }
         }
       }
@@ -64,28 +155,41 @@
           font-style: normal;
           color: $textColor;
           margin: 0;
-          font-size: 22px;
-          line-height: 22px;
-          text-transform: uppercase;
-          @media screen and (max-width: 1149px) {
-            font-size: 16px;
-            line-height: 16px;
-          }
-        }
-
-        .logoInfo {
           font-size: 18px;
+          line-height: 18px;
           text-transform: uppercase;
-          font-weight: 300;
-          color: $textColor;
           @media screen and (max-width: 1149px) {
             font-size: 14px;
             line-height: 14px;
           }
         }
+
+        .logoInfo {
+          font-size: 14px;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $textColor;
+          @media screen and (max-width: 1149px) {
+            font-size: 12px;
+            line-height: 12px;
+          }
+        }
       }
     }
   }
+  .miniNavbar {
+    position: absolute;
+    top: 0;
+    margin-top: 8vh;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    //box-shadow: 0 0 4px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 28%);
+    transition: all 3.3s ease 0s;
+  }
 }
+
 
 

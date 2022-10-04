@@ -118,12 +118,12 @@
 
 
     .info {
-      width: 30%;
+      width: 40%;
       display: flex;
       justify-content: left;
       align-items: center;
       @media screen and (max-width: $mediaWidth) {
-        width: 50%;
+        width: 60%;
       }
 
       .logo {

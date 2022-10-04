@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   box-sizing: content-box;
+  @media screen and (max-width: $mediaWidth) {
+    //background-position: center;
+    background-position: 45%;
+  }
 
   .parentsText {
     height: 100%;

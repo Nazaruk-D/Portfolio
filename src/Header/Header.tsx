@@ -49,6 +49,9 @@ const HeaderMemo = () => {
                         <div className={s.textLogo}>
                             <div className={s.logoName}>Dmitry <strong>Nazaruk</strong></div>
                             <div className={s.logoInfo}><strong>Frontend</strong> Developer</div>
+                            <ReactTypingEffect className={style.description}
+                                               text={"A frontend developer"}
+                            />
                         </div>
                     </div>
 

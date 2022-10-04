@@ -7,6 +7,7 @@
     color: $textColor;
     position: relative;
     margin-top: 10px;
+
     & h2 {
         margin-top: -7px;
         margin-bottom: 0;
@@ -14,6 +15,9 @@
         font-size: 36px;
         line-height: 41px;
         text-transform: uppercase;
+        @media screen and (max-width: $mediaWidth) {
+            text-align: center;
+        }
     }
     &::before {
         bottom: 0;

@@ -2,9 +2,17 @@ import React from 'react';
 import s from "./Contacts.module.scss"
 import Contact from "./Contact/Contact";
 import SecondButton from "../common/components/button/SecondButton";
-import {AiFillFacebook, AiFillLinkedin, AiOutlineHome, AiOutlineMail, AiOutlineYoutube} from "react-icons/ai";
+import {
+    AiFillFacebook,
+    AiFillGithub,
+    AiFillLinkedin,
+    AiOutlineHome,
+    AiOutlineMail,
+    AiOutlineYoutube
+} from "react-icons/ai";
 import {HiOutlinePhone} from "react-icons/hi";
 import {BsInstagram} from "react-icons/bs";
+import {SiCodewars} from "react-icons/si";
 
 
 const Contacts = () => {
@@ -35,6 +43,14 @@ const Contacts = () => {
         {
             icon: <BsInstagram/>,
             link: "https://www.instagram.com/nazaruk_dzmitry/"
+        },
+        {
+            icon: <AiFillGithub/>,
+            link: "https://github.com/Nazaruk-D"
+        },
+        {
+            icon: <SiCodewars/>,
+            link: "https://www.codewars.com/users/Nazaruk-D"
         },
         {
             icon: <AiOutlineYoutube/>,

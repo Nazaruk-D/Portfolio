@@ -1,17 +1,55 @@
 import React from 'react';
 import s from './MiniNav.module.scss'
+import Link from "react-scroll/modules/components/Link";
+import Button from "../common/components/button/Button";
 
 const MiniNav = () => {
-
-
-
     return (
         <div className={s.miniNav}>
-            <li><a href="">Home</a></li>
-            <li><a href="">About me</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Download CV</a></li>
+            <li><Link
+                activeClass={s.activeLink}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+                to="home"
+            >Home</Link></li>
+            <li><Link
+                activeClass={s.activeLink}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+                to="about"
+            >About Me</Link></li>
+            <li><Link
+                activeClass={s.activeLink}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+                to="projects"
+            >Projects</Link></li>
+            <li><Link
+                activeClass={s.activeLink}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+                to="skills"
+            >Skills</Link></li>
+            <li><Link
+                activeClass={s.activeLink}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={1500}
+                to="contacts"
+            >Contacts</Link></li>
+
+            <span className={s.button}>
+                <Button text={"Hire me"}/>
+            </span>
         </div>
     );
 };

@@ -56,7 +56,7 @@ export const MySkills = () => {
 
     const color = {color:"#f9f9f9"}
 
-    return <div className={s.intermediateBlock}>
+    return <div className={s.intermediateBlock} id={'skills'}>
         <div className={s.title}>
             <Title title={"My skills"} color={color}/>
         </div>

@@ -40,7 +40,7 @@ const HeaderMemo = () => {
     }
 
 
-    return (<div>
+    return (<div id={'header'}>
             <div className={s.header} style={bg}>
                 <div className={s.mainBlock}>
                     <div className={s.info}>

@@ -59,7 +59,7 @@ const Contacts = () => {
     ]
 
     return (
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock} id={'contacts'}>
             <div className={s.contactsBlock}>
                 <div className={s.contacts}>
                     <h2 className={s.title}>Contact address</h2>

@@ -8,7 +8,7 @@ import WhoAmI from "./WhoAmI/WhoAmI";
 
 const AboutMe = () => {
     return (
-        <div className={s.aboutBlock}>
+        <div className={s.aboutBlock} id={'about'}>
             <div className={`${sContainer.container} ${s.aboutContainer}`}>
                 <Title title={'About me'}/>
                 <div className={s.aboutMe}>
@@ -18,7 +18,6 @@ const AboutMe = () => {
                     <div className={s.eduExp}>
                         <EduExp/>
                     </div>
-
                 </div>
             </div>
         </div>

@@ -4,8 +4,6 @@ import Button from "../common/components/button/Button";
 
 const Nav = () => {
 
-
-
     return (
         <div className={s.nav}>
             <li><a href="">Home</a></li>

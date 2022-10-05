@@ -17,6 +17,7 @@
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
 
     .progressbar {
+      width: 0;
       position: relative;
       float: left;
       background-color: $textColor;
@@ -26,6 +27,9 @@
       line-height: 20px;
       color: $bgSecondColor;
       text-align: center;
+      transform-origin: left top;
+      transform: scaleX(0);
+      //transition: all 1s ease 0s;
 
       .percent {
         position: absolute;
@@ -34,6 +38,19 @@
         width: 31px;
         height: 20px;
         background-color: $textColor;
+      }
+
+    }
+    .progressbarActive {
+      animation: scale ease 1s forwards;
+      display: block;
+      @keyframes scale {
+        0% {
+          transform: scaleX(0);
+        }
+        100% {
+          transform: scaleX(1);
+        }
       }
     }
   }

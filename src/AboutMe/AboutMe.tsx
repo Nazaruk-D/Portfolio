@@ -13,10 +13,10 @@ const AboutMe = () => {
                 <Title title={'About me'}/>
                 <div className={s.aboutMe}>
                     <div className={s.infoExpertBlock}>
-                    <WhoAmI/>
+                        <WhoAmI/>
                     </div>
                     <div className={s.eduExp}>
-                       <EduExp/>
+                        <EduExp/>
                     </div>
 
                 </div>

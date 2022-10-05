@@ -11,7 +11,7 @@ const HeaderMemo = () => {
     const [bg, setBg] = useState({})
     const [bgMiniNav, setBgMiniNav] = useState({})
 
-    window.addEventListener('scroll', e => {
+    document.addEventListener('scroll', e => {
         const backgroundWhite = {
             backgroundColor: "white",
             height: "5vh",
@@ -23,8 +23,7 @@ const HeaderMemo = () => {
             transition: "all 0.3s ease 0s",
             // width: "100%",
         }
-        // eslint-disable-next-line no-restricted-globals
-        if (scrollY > 0) {
+        if (window.scrollY > 0) {
             setBg(backgroundWhite)
             setBgMiniNav(marginMiniNav)
         } else {

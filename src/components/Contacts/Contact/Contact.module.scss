@@ -1,0 +1,41 @@
+@import '../../../common/styles/sass/variables';
+
+.ContactContainer {
+    display: flex;
+    align-items: center;
+    .logoLink{
+        min-width: 40px;
+        height: 40px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 25px;
+        text-decoration: none;
+        color: black;
+        &:hover {
+            color:white;
+            background-color: black;
+            transition: color .35s ease, background-color .35s ease-in-out, border-color .35s ease;
+        }
+    }
+    .logo {
+        min-width: 40px;
+        height: 40px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .text{
+        //background-color: $bgSecondColor;
+        padding-left: 10px;
+    }
+}
+
+
+
+

@@ -1,0 +1,63 @@
+@import '../../common/styles/sass/variables';
+
+.homeBlock {
+  height: 100vh;
+  background-color: #fff;
+  background-image: url("../../assets/img/myPhoto2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  box-sizing: content-box;
+  @media screen and (max-width: $mediaWidth) {
+    //background-position: center;
+    background-position: 45%;
+  }
+
+  .parentsText {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    //justify-content: start;
+    flex-wrap: wrap;
+
+    .text {
+      width: 400px;
+      padding: 10px;
+      box-sizing: border-box;
+      position: relative;
+
+      .greetings, .front {
+        font-family: Raleway, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: $textColor;
+        margin-bottom: 36px;
+      }
+
+      .name {
+        position: relative;
+        color: $textColor;
+        text-transform: uppercase;
+        outline: 0;
+        line-height: 35px;
+        text-decoration: none;
+        font-family: Raleway, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 22px;
+      }
+
+    }
+  }
+}
+
+
+/*Медиа-запрос:*/
+/*@media screen and (max-width: 1129px) будет применяться данный медиа-запрос до тех пор, пока ширина экрана будет ниже 1129px{*/
+/*    .photo { указываем место, где хотим прописать медиа запрос*/
+/*        justify-content: center; заменится только justify-content, все отсальные стили будут применяться те же, что и прописаны в .photo*/
+/*    }*/

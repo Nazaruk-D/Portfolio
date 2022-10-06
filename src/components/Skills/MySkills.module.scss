@@ -1,0 +1,57 @@
+@import '../../common/styles/sass/variables';
+
+.intermediateBlock {
+  position: relative;
+  min-height: 25vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $textColor;
+  background-image: url("../../assets/img/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-wrap: wrap;
+  &::before {
+    position: absolute;
+    content: "";
+    color: $bgSecondColor;
+    background-color: black;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+  .title {
+    margin: 15px 0;
+  }
+  .logoBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    flex-wrap: wrap;
+    z-index: 1;
+
+    @media screen and (max-width: $mediaWidth) {
+      align-items: start;
+      justify-content: center;
+    }
+    & img {
+      height: 100px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      @media screen and (max-width: $mediaWidth) {
+        height: 60px
+      }
+    }
+  }
+}
+
+
+
+

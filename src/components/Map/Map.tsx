@@ -5,6 +5,7 @@ import s from './Map.module.scss'
 import stork from '../../assets/png/stork.png'
 
 
+
 const Map = () => {
 
     const [newPosition, setNewPosition] = useState<any>({position:"relative"})

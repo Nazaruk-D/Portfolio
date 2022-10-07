@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import s from './Header.module.scss'
-import Nav from "../Navigation/Nav";
+import Nav from "./Navigation/Nav";
 import logo from "../../assets/img/logo.jpg"
-import MiniNav from "../Navigation/MiniNav";
+import MiniNav from "./Navigation/MiniNav";
 
 
 const HeaderMemo = () => {

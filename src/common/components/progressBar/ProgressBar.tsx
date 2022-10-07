@@ -11,7 +11,7 @@ const ProgressBar: React.FC<ProgressBarPropsType> = ({percent,title,stylePercent
     const [bg, setBg] = useState("")
     const any = `${s.progressbarActive}`
     document.addEventListener('scroll', e => {
-        if (window.scrollY > 500) {
+        if (window.scrollY > 450) {
             setBg(any)
         }
     })

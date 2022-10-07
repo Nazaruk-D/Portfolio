@@ -18,16 +18,50 @@
         background-size: cover;
         background-position: center;
         position: relative;
-        &::before {
+        display: flex;
+        .repo{
             position: absolute;
-            content: "";
-            color: $bgSecondColor;
-            background-color: black;
-            opacity: 0.4;
             top: 0;
             left: 0;
-            right: 0;
             bottom: 0;
+            right: 0;
+            color: #fff;
+            background: rgba(159, 156, 151, 0.8);
+            text-align: center;
+            transition: opacity .25s ease-in-out;
+            opacity: 0;
+            overflow: hidden;
+            padding: 15px;
+            &:hover{
+                opacity: 1;
+            }
+            .link{
+                min-width: 80px;
+                background: transparent;
+                border: 1px solid #fff;
+                font-weight: 500;
+                border-radius: 0;
+                outline: 0;
+                color: #fff;
+                transition: .25s;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 10px ;
+                font-size: 14px;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                touch-action: manipulation;
+                cursor: pointer;
+                user-select: none;
+                text-decoration: none;
+                &:hover{
+                    background-color: $textColor;
+                    border-color: $textColor;
+                }
+            }
         }
     }
     .textArea{
@@ -52,7 +86,6 @@
             line-height: 1.42857143;
             color: $textColor;
         }
-
     }
 }
 

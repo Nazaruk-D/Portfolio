@@ -46,10 +46,6 @@ const MiniNav = () => {
                 duration={1500}
                 to="contacts"
             >Contacts</Link></li>
-
-            <span className={s.button}>
-                <Button text={"Hire me"}/>
-            </span>
         </div>
     );
 };

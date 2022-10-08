@@ -21,10 +21,10 @@ const Project: React.FC<ProjectPropsType> = ({title, description, link, style, l
                         <h2>{title}</h2>
                         <p>To view the project or repository, follow the links</p>
                         <div>
-                            <a href={link} className={s.link} data-toggle="modal">project</a>
+                            <a href={link} target="_blank" className={s.link} data-toggle="modal">project</a>
                         </div>
                         <div>
-                            <a href={linkRep} className={s.link} data-toggle="modal">repository</a>
+                            <a href={linkRep} target="_blank" className={s.link} data-toggle="modal">repository</a>
                         </div>
                     </div>
                 </div>

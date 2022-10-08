@@ -19,6 +19,7 @@
     "@types/react-dom": "^18.0.0",
     "@types/react-scroll": "^1.8.4",
     "@urbica/react-map-gl": "^1.16.2",
+    "formik": "^2.2.9",
     "gh-pages": "^4.0.0",
     "mapbox-gl": "^2.10.0",
     "react": "^18.2.0",
@@ -54,5 +55,4 @@
     "defaults",
     "not ie 11"
   ]
-
 }

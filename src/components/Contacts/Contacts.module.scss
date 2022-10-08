@@ -115,13 +115,13 @@
       align-items: center;
       box-sizing: border-box;
       @media screen and (max-width: $mediaWidth) {
-        width: 80%;
+        width: 100%;
         justify-content: center;
         border-right: 1px solid rgba(1,1,1,0);
       }
 
       .firstBlock {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
 
@@ -139,13 +139,13 @@
       }
 
       .errorBlock {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
       }
 
       .secondBlock {
-        width: 80%;
+        width: 90%;
         flex-direction: column;
         margin: 10px 0;
         color: rgba(5, 8, 7, 1);
@@ -158,7 +158,7 @@
       }
 
       .textArea {
-        width: 80%;
+        width: 90%;
         color: rgba(5, 8, 7, 1);
         border-radius: 0;
         box-shadow: none;
@@ -171,6 +171,7 @@
       .button {
         width: 80%;
         margin-top: 20px;
+        margin-bottom: 30px;
       }
     }
   }

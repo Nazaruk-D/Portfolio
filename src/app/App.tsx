@@ -9,10 +9,12 @@ import Home from "../components/Home/Home";
 import {Hire} from "../components/Hire/Hire";
 import Map from "../components/Map/Map";
 import {MySkills} from "../components/Skills/MySkills";
+import ModalArrow from "../common/components/modalArrow/ModalArrow";
 
 function App() {
     return (
         <div className="App">
+            <ModalArrow/>
             <Header/>
             <Home/>
             <AboutMe/>

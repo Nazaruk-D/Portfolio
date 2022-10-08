@@ -9,10 +9,10 @@ type ProgressBarPropsType = {
 
 const ProgressBar: React.FC<ProgressBarPropsType> = ({percent,title,stylePercent}) => {
     const [bg, setBg] = useState("")
-    const any = `${s.progressbarActive}`
+    const activeClass = `${s.progressbarActive}`
     document.addEventListener('scroll', e => {
         if (window.scrollY > 450) {
-            setBg(any)
+            setBg(activeClass)
         }
     })
 

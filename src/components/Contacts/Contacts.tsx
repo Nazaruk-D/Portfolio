@@ -61,10 +61,10 @@ const Contacts = () => {
             icon: <SiCodewars/>,
             link: "https://www.codewars.com/users/Nazaruk-D"
         },
-        {
-            icon: <AiOutlineYoutube/>,
-            link: "https://www.youtube.com/channel/UCU3EioEIrdAYLmV4rNskdRw"
-        },
+        // {
+        //     icon: <AiOutlineYoutube/>,
+        //     link: "https://www.youtube.com/channel/UCU3EioEIrdAYLmV4rNskdRw"
+        // },
     ]
 
 

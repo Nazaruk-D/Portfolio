@@ -6,11 +6,9 @@ const ModalArrow = () => {
     const [arrow, setArrow] = useState({})
     const arrowOn = `${s.arrowActive}`
 
-
     document.addEventListener('scroll', () => {
         if (window.scrollY > 0) {
             setArrow(arrowOn)
-            // document.getElementById("arrow").className = (`${style.arrow} ${style.showArrow}`)
         } else {
             setArrow("")
 
@@ -26,17 +24,6 @@ const ModalArrow = () => {
                       offset={-50}
                       duration={5000}>
                 </Link>
-
-
-                {/*<li><Link*/}
-                {/*className={s.arrow}*/}
-                {/*activeClass={s.activeLink}*/}
-                {/*spy={true}*/}
-                {/*smooth={true}*/}
-                {/*offset={-50}*/}
-                {/*duration={1500}*/}
-                {/*to="home"*/}
-                {/*>Home</Link></li>*/}
             </div>
     );
 };

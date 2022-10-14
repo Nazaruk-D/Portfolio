@@ -1,10 +1,9 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .header {
   height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, nowrap);
   position: fixed;
   top: 0;
   left: 0;
@@ -12,25 +11,17 @@
   padding-top: 10px;
   padding-bottom: 10px;
   z-index: 5;
-  //background-color: green;
-  //-webkit-transition: .25s;
-  //-o-transition: .25s;
-  //transition: .25s;
-  //.header2 {
-  //  height: 15vh;
-  //}
 
   .mainBlock {
     width: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center, nowrap);
     position: absolute;
     @media screen and (max-width: $mediaWidth) {
       width: 100%;
       justify-content: space-around;
     }
-    .burgerContainer{
+
+    .burgerContainer {
       width: 35px;
       height: 20px;
       border: 1px solid black;
@@ -39,6 +30,7 @@
       @media screen and (max-width: $mediaWidth) {
         display: block;
       }
+
       .burger {
         display: none;
         @media screen and (max-width: $mediaWidth) {
@@ -51,7 +43,7 @@
           & span {
             position: absolute;
             background-color: $textColor;
-            left:0;
+            left: 0;
             width: 100%;
             height: 2px;
             top: 6px;
@@ -63,7 +55,7 @@
             position: absolute;
             width: 100%;
             height: 2px;
-            left:0;
+            left: 0;
             transition: all 0.3s ease 0s;
           }
           &:before {
@@ -76,7 +68,7 @@
       }
     }
 
-    .burgerContainerActive{
+    .burgerContainerActive {
       width: 35px;
       height: 20px;
       border: 1px solid black;
@@ -85,6 +77,7 @@
       @media screen and (max-width: $mediaWidth) {
         display: block;
       }
+
       .burgerActive {
         display: none;
         @media screen and (max-width: $mediaWidth) {
@@ -101,7 +94,7 @@
             position: absolute;
             width: 100%;
             height: 2px;
-            left:0;
+            left: 0;
             transition: all 0.3s ease 0s;
           }
           &:before {
@@ -119,9 +112,7 @@
 
     .info {
       width: 40%;
-      display: flex;
-      justify-content: left;
-      align-items: center;
+      @include flex(row, left, center, nowrap);
       @media screen and (max-width: $mediaWidth) {
         width: 60%;
       }
@@ -149,14 +140,12 @@
         @media screen and (max-width: $mediaWidth) {
           //width: 55px;
         }
+
         .logoName {
-          font-family: Raleway, sans-serif;
-          font-weight: 400;
+          @include text(18px, 18px, 400);
           font-style: normal;
           color: $textColor;
           margin: 0;
-          font-size: 18px;
-          line-height: 18px;
           text-transform: uppercase;
           @media screen and (max-width: 1149px) {
             font-size: 14px;
@@ -165,18 +154,17 @@
         }
 
         .logoInfo {
-          font-size: 14px;
+          @include text(14px, 14px, 300);
           text-transform: uppercase;
-          font-weight: 300;
           color: $textColor;
           @media screen and (max-width: 1149px) {
-            font-size: 12px;
-            line-height: 12px;
+            @include text(12px, 12px, 300);
           }
         }
       }
     }
   }
+
   .miniNavbar {
     position: absolute;
     top: 0;
@@ -186,7 +174,6 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    //box-shadow: 0 0 4px rgb(0 0 0 / 14%), 0 4px 8px rgb(0 0 0 / 28%);
     transition: all 3.3s ease 0s;
   }
 }

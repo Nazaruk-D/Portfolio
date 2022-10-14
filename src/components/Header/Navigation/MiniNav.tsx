@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './MiniNav.module.scss'
 import Link from "react-scroll/modules/components/Link";
-import Button from "../../../common/components/button/Button";
 
 const MiniNav = () => {
     return (

@@ -1,4 +1,5 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .aboutBlock {
   min-height: 100vh;
@@ -14,30 +15,32 @@
 
     .aboutMe {
       width: 70%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
+      //@include flex (column, center, center ,wrap);
+      //display: flex;
+      //flex-direction: row;
+      //justify-content: space-evenly;
+      //flex-wrap: wrap;
       margin-top: 50px;
       @media screen and (max-width: $mediaWidth) {
         width: 100%;
       }
 
       .infoExpertBlock {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        //width: 100%;
+        //@include flex (column, center, center ,wrap);
+        //display: flex;
+        //flex-direction: row;
+        //justify-content: space-evenly;
+        //flex-wrap: wrap;
       }
 
       .eduExp {
         margin-top: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        //width: 100%;
+        //display: flex;
+        //flex-direction: row;
+        //justify-content: space-evenly;
+        //flex-wrap: wrap;
 
       }
     }

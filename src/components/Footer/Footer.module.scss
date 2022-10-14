@@ -1,11 +1,10 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .blockFooter {
-    height: 7vh;
+    @include flex(row, center, center, wrap);
+    @include text(14px, 14px, 400);
     background-color: $textColor;
     color: $bgColor;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Raleway, sans-serif;
+    height: 7vh;
 }

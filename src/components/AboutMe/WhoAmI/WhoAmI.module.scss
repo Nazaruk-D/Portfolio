@@ -1,11 +1,9 @@
 @import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
 
 .infoExpertBlock {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  //width: 100%;
+  @include flex(row, space-evenly,start,wrap);
 
   .info {
     width: 48%;
@@ -16,10 +14,8 @@
     }
 
     .titleAboutMe {
-      line-height: 1.1;
+      @include text(24px, 1.1, 400);
       text-align: left;
-      font-size: 24px;
-      font-weight: 400;
       margin-top: 0;
       text-transform: uppercase;
       font-style: normal;
@@ -40,10 +36,8 @@
     }
 
     .titleAboutMe {
-      line-height: 1.1;
+      @include text(24px, 1.1, 400);
       text-align: left;
-      font-size: 24px;
-      font-weight: 400;
       margin-top: 0;
       text-transform: uppercase;
       font-style: normal;

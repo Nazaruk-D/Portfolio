@@ -1,19 +1,15 @@
 @import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
 
 .intermediateBlock {
   position: relative;
   min-height: 25vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include flex(column, center, center, wrap);
   background-color: $textColor;
   background-image: url("../../assets/img/bg-2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  @include bgSettings();
   background-attachment: fixed;
-  flex-wrap: wrap;
   &::before {
     position: absolute;
     content: "";
@@ -30,11 +26,8 @@
     margin: 15px 0;
   }
   .logoBlock {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex(row, space-between, center, wrap);
     width: 80%;
-    flex-wrap: wrap;
     z-index: 1;
 
     @media screen and (max-width: $mediaWidth) {

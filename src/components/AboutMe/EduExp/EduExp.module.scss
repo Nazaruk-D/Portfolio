@@ -1,9 +1,10 @@
 @import '../../../common/styles/sass/variables';
+@import '../../../common/styles/sass/mixins';
 
 .block {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  //width: 100%;
   @media screen and (max-width: $mediaWidth) {
     flex-direction: column;
     align-items: center;
@@ -24,14 +25,10 @@
     }
 
     .title {
+      @include text(24px, 1.1, 400);
       margin-bottom: 0;
-      font-weight: 400;
       margin-top: 0;
       text-transform: uppercase;
-      font-family: Raleway, sans-serif;
-      font-size: 24px;
-      line-height: 1.1;
-
     }
   }
   .expContainer {
@@ -47,13 +44,10 @@
     }
 
     .title {
+      @include text(24px, 1.1, 400);
       margin-bottom: 0;
-      font-weight: 400;
       margin-top: 0;
       text-transform: uppercase;
-      font-family: Raleway, sans-serif;
-      font-size: 24px;
-      line-height: 1.1;
     }
   }
 

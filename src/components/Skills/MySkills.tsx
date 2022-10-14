@@ -3,7 +3,7 @@ import s from "./MySkills.module.scss"
 import {faCss3Alt, faGitAlt, faHtml5, faJs, faReact} from "@fortawesome/free-brands-svg-icons";
 import reduxSvg from "../../assets/svg/redux.svg"
 import tsSvg from '../../assets/svg/TS.svg'
-import restSvg from '../../assets/svg/TS.svg'
+import restSvg from '../../assets/png/restAPI.png'
 import storybookSvg from "../../assets/svg/storybook.svg";
 import jestSvg from "../../assets/svg/jest.svg";
 import {Skill} from "./Skill/Skill";

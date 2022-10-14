@@ -15,9 +15,6 @@ const WhoAmI: React.FC<WhoAmIPropsType> = () => {
                     <p> Back to school, I wanted to become a programmer, but due to the lack of information, I decided to go in a different direction.</p>
                     <p> I enjoy what I am doing now and plan to continue developing in this area.</p>
                     <p> I am a current referee of the EHF handball.</p>
-
-
-
                 <SecondButton text={"Download MY CV"}/>
             </div>
             <div className={s.expert}>

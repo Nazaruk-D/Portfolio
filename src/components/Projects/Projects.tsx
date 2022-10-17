@@ -7,6 +7,7 @@ import socialImage from "../../assets/img/social.jpeg"
 import todoImage from "../../assets/img/todo.jpeg"
 import nonameImage from "../../assets/img/noname.jpg"
 
+
 const Projects = () => {
 
     const social = {
@@ -30,23 +31,20 @@ const Projects = () => {
                         linkRep={"https://github.com/Nazaruk-D/Samurai-way"}
                         title={"Social Network"}
                         description={"A social networking is an online platform which people use to build social networks or social relationships with other people who share similar personal or career content, interests, activities, backgrounds or real-life connections."}/>
-
-
                     <Project
                         style={todo}
                         link={"https://nazaruk-d.github.io/ToDoList/"}
                         linkRep={"https://github.com/Nazaruk-D/ToDoList"}
                         title={"Todolist"}
                         description={"Todo List is a list of things you need to do or want to do. Traditionally, they are written on a piece of paper and organized in order of priority. When a task is completed, it is usually crossed off the list."}/>
-
-
                     <Project
                         style={noname}
                         link={"https://nazaruk-d.github.io/Counter"}
                         linkRep={"https://github.com/Nazaruk-D/Counter"}
                         title={"Counter"}
                         description={"A social networking is an online platform which people use to build social networks or social relationships with other people who share similar personal or career content, interests, activities, backgrounds or real-life connections."}/>
-                </div>
+                    </div>
+
             </div>
         </div>
     );

@@ -5,7 +5,8 @@ import BIRDS from 'vanta/dist/vanta.fog.min'
 import * as THREE from 'three'
 import s from './Hire.module.scss'
 import DistantWork from "../DistantWork/DistantWork";
-
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 export const Hire = () => {
     const [vantaEffect, setVantaEffect] = useState<any>(null)

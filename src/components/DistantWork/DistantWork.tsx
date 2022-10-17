@@ -3,6 +3,10 @@ import s from "./DistantWork.module.scss"
 import sContainer from "../../assets/styles/Container.module.css";
 import Title from "../../common/components/title/Title";
 import Button from "../../common/components/button/Button";
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
+// @ts-ignore
+import HeadShake from 'react-reveal/HeadShake';
 
 const DistantWork = () => {
     return (<>
@@ -11,9 +15,11 @@ const DistantWork = () => {
                 <div>
                     <Title title={"Considering remote work options"}/>
                 </div>
+                <HeadShake>
                 <div>
                     <Button text={"Hire me"}/>
                 </div>
+                </HeadShake>
             </div>
         </div>
         </>

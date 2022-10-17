@@ -8,6 +8,8 @@ import storybookSvg from "../../assets/svg/storybook.svg";
 import jestSvg from "../../assets/svg/jest.svg";
 import {Skill} from "./Skill/Skill";
 import Title from "../../common/components/title/Title";
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 export const MySkills = () => {
 
@@ -63,7 +65,9 @@ export const MySkills = () => {
         <div className={s.logoBlock}>
             {
                 skills.map((m,i) =>
+                    <Fade bottom>
                     <Skill key={i} skillName={m.skill} icon={m.icon} svgIcon={m.svg}/>
+                    </Fade>
                 )
             }
         </div>

@@ -3,7 +3,8 @@ import s from './Header.module.scss'
 import Nav from "./Navigation/Nav";
 import logo from "../../assets/img/logo.jpg"
 import MiniNav from "./Navigation/MiniNav";
-
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 const HeaderMemo = () => {
 
@@ -41,39 +42,40 @@ const HeaderMemo = () => {
 
 
     return (<div id={'header'}>
-            <div className={s.header} style={bg}>
-                <div className={s.mainBlock}>
-                    <div className={s.info}>
-                        <div className={s.logo}><img src={logo} alt="logo" className={s.img}/></div>
-                        <div className={s.textLogo}>
-                            <div className={s.logoName}>Dmitry <strong>Nazaruk</strong></div>
-                            <div className={s.logoInfo}><strong>Frontend</strong> Developer</div>
+            <Fade top>
+                <div className={s.header} style={bg}>
+                    <div className={s.mainBlock}>
+                        <div className={s.info}>
+                            <div className={s.logo}><img src={logo} alt="logo" className={s.img}/></div>
+                            <div className={s.textLogo}>
+                                <div className={s.logoName}>Dmitry <strong>Nazaruk</strong></div>
+                                <div className={s.logoInfo}><strong>Frontend</strong> Developer</div>
+                            </div>
                         </div>
+
+
+                        {!toggleMenu
+                            ? <div className={s.burgerContainer} onClick={onClickHandler}>
+                                <div className={s.burger}><span></span></div>
+                            </div>
+
+
+                            : <div className={s.burgerContainerActive} onClick={onClickHandler}>
+                                <div className={s.burgerActive}></div>
+
+                            </div>
+                        }
+
+                        <Nav/>
                     </div>
-
-
-                    {!toggleMenu
-                        ? <div className={s.burgerContainer} onClick={onClickHandler}>
-                            <div className={s.burger}><span></span></div>
-                        </div>
-
-
-                        : <div className={s.burgerContainerActive} onClick={onClickHandler}>
-                            <div className={s.burgerActive}></div>
-
+                    {toggleMenu &&
+                        <div className={s.miniNavbar} style={bgMiniNav}>
+                            <MiniNav/>
                         </div>
                     }
 
-                    <Nav/>
                 </div>
-                {toggleMenu &&
-                    <div className={s.miniNavbar} style={bgMiniNav}>
-                        <MiniNav/>
-                    </div>
-                }
-
-            </div>
-
+            </Fade>
         </div>
     );
 };

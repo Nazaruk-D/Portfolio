@@ -1,6 +1,7 @@
 import React from 'react';
 import s from "./Project.module.scss"
-
+// @ts-ignore
+import Fade from 'react-reveal/Fade';
 
 export type ProjectPropsType = {
     style: {
@@ -15,7 +16,8 @@ export type ProjectPropsType = {
 
 const Project: React.FC<ProjectPropsType> = ({title, description, link, style, linkRep}) => {
     return (
-        <div className={s.projectBlock}>
+        <Fade bottom cascade>
+            <div className={s.projectBlock}>
                 <div className={s.imgContainer} style={style}>
                     <div className={s.repo}>
                         <h2>{title}</h2>
@@ -28,12 +30,13 @@ const Project: React.FC<ProjectPropsType> = ({title, description, link, style, l
                         </div>
                     </div>
                 </div>
-            <div className={s.textArea}>
-                <div className={s.nameProject}>{title}</div>
-                <div className={s.description}>{description}</div>
-            </div>
 
-        </div>
+                <div className={s.textArea}>
+                    <div className={s.nameProject}>{title}</div>
+                    <div className={s.description}>{description}</div>
+                </div>
+            </div>
+        </Fade>
     );
 };
 

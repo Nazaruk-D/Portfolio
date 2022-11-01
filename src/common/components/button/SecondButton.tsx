@@ -1,5 +1,7 @@
 import React from 'react';
 import s from "./SecondButton.module.scss"
+// @ts-ignore
+import cv from '../../../assets/cv/cvNazaruk.pdf'
 
 type ButtonProps = {
     text: string
@@ -9,7 +11,9 @@ type ButtonProps = {
 const SecondButton: React.FC<ButtonProps> = (props) => {
     return (<>
             <div>
-                <button className={s.button} type={props.type}>{props.text}</button>
+                <a href={cv} download={'cv_Nazaruk'}>
+                    <button className={s.button} type={props.type}>{props.text}</button>
+                </a>
             </div>
         </>
     );

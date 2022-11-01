@@ -76,9 +76,15 @@
       resize: none;
     }
     .button {
+      @include flex(column, center, flex-start,wrap);
       width: 90%;
       margin-top: 20px;
       margin-bottom: 30px;
+      .answer{
+        @include text(16px, 18px, 500);
+
+        margin-left: 130px;
+      }
     }
   }
 }

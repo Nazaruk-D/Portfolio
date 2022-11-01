@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.scss';
 import Header from "../components/Header/Header";
 import AboutMe from "../components/AboutMe/AboutMe";
@@ -11,7 +11,11 @@ import Map from "../components/Map/Map";
 import {MySkills} from "../components/Skills/MySkills";
 import ModalArrow from "../common/components/modalArrow/ModalArrow";
 
+
 function App() {
+
+
+
     return (
         <div className="App">
             <ModalArrow/>

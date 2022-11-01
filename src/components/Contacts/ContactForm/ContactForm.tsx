@@ -65,39 +65,42 @@ const ContactForm = () => {
             <div className={s.feedbackFormBlock}>
                 {/*<form action="src/components/Contacts/Contacts" className={s.form} onSubmit={formik.handleSubmit} >*/}
                 <form ref={form} className={s.form} onSubmit={sendEmail}>
-                    <div className={s.firstBlock}>
+                    <div>
+                        <div className={s.firstBlock}>
+                            <input
+                                type="text"
+                                name="name"
+                                className={s.firstLevelInput}
+                                placeholder={"Full Name"}
+                            />
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder={"E-mail"}
+                                className={s.firstLevelInput}
+                            />
+                        </div>
+                        <div className={s.errorBlock}>
+                            {/*{formik.touched.name && formik.errors.name &&*/}
+                            {/*    <div style={{color: "red"}}>{formik.errors.name}</div>}*/}
+                            {/*{formik.touched.email && formik.errors.email &&*/}
+                            {/*    <div style={{color: "red"}}>{formik.errors.email}</div>}*/}
+                        </div>
                         <input
                             type="text"
-                            name="name"
-                            className={s.firstLevelInput}
-                            placeholder={"Full Name"}
+                            name="subject"
+                            placeholder={"Subject"}
+                            className={s.secondBlock}
                         />
-                        <input
-                            type="text"
-                            name="email"
-                            placeholder={"E-mail"}
-                            className={s.firstLevelInput}
-                        />
+                        <textarea
+                            placeholder={"Message"}
+                            name="message"
+                            cols={30}
+                            rows={10}
+                            className={s.textArea}
+                        ></textarea>
                     </div>
-                    <div className={s.errorBlock}>
-                        {/*{formik.touched.name && formik.errors.name &&*/}
-                        {/*    <div style={{color: "red"}}>{formik.errors.name}</div>}*/}
-                        {/*{formik.touched.email && formik.errors.email &&*/}
-                        {/*    <div style={{color: "red"}}>{formik.errors.email}</div>}*/}
-                    </div>
-                    <input
-                        type="text"
-                        name="subject"
-                        placeholder={"Subject"}
-                        className={s.secondBlock}
-                    />
-                    <textarea
-                        placeholder={"Message"}
-                        name="message"
-                        cols={30}
-                        rows={10}
-                        className={s.textArea}
-                    > </textarea>
+
                     {/*{formik.touched.message && formik.errors.message &&*/}
                     {/*    <div style={{color: "red"}}>{formik.errors.message}</div>}*/}
                     <div className={s.button}>

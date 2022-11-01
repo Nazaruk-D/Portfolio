@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {FC, useState} from 'react';
 import s from './Header.module.scss'
 import Nav from "./Navigation/Nav";
 import logo from "../../assets/img/logo.jpg"
@@ -6,7 +6,11 @@ import MiniNav from "./Navigation/MiniNav";
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-const HeaderMemo = () => {
+type HeaderPropsType = {
+    setModal: (modal: boolean) => void
+}
+
+const Header: FC<HeaderPropsType> = ({setModal}) => {
 
     //background on scrolling
     const [bg, setBg] = useState({})
@@ -66,7 +70,7 @@ const HeaderMemo = () => {
                             </div>
                         }
 
-                        <Nav/>
+                        <Nav setModal={setModal}/>
                     </div>
                     {toggleMenu &&
                         <div className={s.miniNavbar} style={bgMiniNav}>
@@ -79,5 +83,5 @@ const HeaderMemo = () => {
         </div>
     );
 };
-const Header = React.memo(HeaderMemo)
+
 export default Header;

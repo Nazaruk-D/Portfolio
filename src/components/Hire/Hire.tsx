@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react'
+import React, {FC, useEffect, useRef, useState} from 'react'
 // @ts-ignore
 import BIRDS from 'vanta/dist/vanta.fog.min'
 // @ts-ignore
@@ -8,7 +8,11 @@ import DistantWork from "../DistantWork/DistantWork";
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
 
-export const Hire = () => {
+type HirePropsType = {
+    setModal: (modal: boolean) => void
+}
+
+export const Hire: FC<HirePropsType> = ({setModal}) => {
     const [vantaEffect, setVantaEffect] = useState<any>(null)
     const myRef = useRef(null)
     useEffect(() => {
@@ -36,7 +40,7 @@ export const Hire = () => {
     }, [vantaEffect])
     return <div className={s.hire}>
         <div className={s.distanceWork}>
-            <DistantWork/>
+            <DistantWork setModal={setModal}/>
         </div>
         <div ref={myRef} className={s.vanta}></div>
     </div>

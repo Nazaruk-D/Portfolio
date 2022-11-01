@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {FC} from 'react';
 import s from './Nav.module.scss'
 import Button from "../../../common/components/button/Button";
 import Link from 'react-scroll/modules/components/Link';
 
-const Nav = () => {
+type NavPropsType = {
+    setModal: (modal: boolean) => void
+}
+
+const Nav: FC<NavPropsType> = ({setModal}) => {
 
     return (
         <div className={s.navBar}>
@@ -54,7 +58,7 @@ const Nav = () => {
             >Contacts</Link></li>
 
             <span className={s.button}>
-                <Button text={"Hire me"}/>
+                <Button text={"Hire me"} onClickHandler={setModal}/>
             </span>
         </div>
     );

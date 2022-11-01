@@ -1,0 +1,120 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.modalContainer {
+  position: fixed;
+  @include flex(row, center, center, wrap);
+  height: 100%;
+  width: 100%;
+  background-color: rgba(59, 59, 59, 0.5);
+  z-index: 14;
+
+  .modalBlock {
+    width: 800px;
+    min-height: 500px;
+    background-color: #f3f3f3;
+    position: relative;
+
+    .closeBlock{
+      &:after{
+        position: absolute;
+        content: "\2716";
+        right: -20px;
+        top: -5px;
+        font-weight: 600;
+        color: $bgColor;
+        cursor: pointer;
+      }
+    }
+
+    .headModal {
+      height: 100px;
+      width: 100%;
+      background-color: $textColor;
+      color: $bgColor;
+      padding: 20px 30px;
+      box-sizing: border-box;
+      @include flex(column, center, flex-start, wrap);
+
+      .headerText {
+        margin: 0;
+        @include text(22px, 22px, 800);
+        text-transform: uppercase;
+      }
+
+      .text {
+        @include text(14px, 14px, 400);
+        margin-top: 8px;
+      }
+    }
+
+    .bodyModal {
+      height: 320px;
+      margin: 40px 30px;
+      @include flex(row, flex-start, flex-start, wrap);
+
+      .form {
+        @include flex(row, flex-start, flex-start, wrap);
+
+        .all {
+          width: 70%;
+
+          @include flex(column, flex-start, flex-start, wrap);
+
+          .inputBlock {
+            width: 100%;
+            @include flex(row, space-between, flex-start, wrap);
+
+            .input {
+              width: 45%;
+              min-height: 41px;
+              margin: 10px 0;
+              padding-left: 15px;
+              color: #999999;
+              border: 1px solid #aaa;
+              @include text(13px, 13px, 400);
+
+            }
+          }
+
+          .textArea {
+            width: 100%;
+            color: rgba(5, 8, 7, 1);
+            border-radius: 0;
+            box-shadow: none;
+            border: 1px solid #ccc;
+            padding: 6px 12px;
+            font-size: 14px;
+            box-sizing: border-box;
+            resize: none;
+          }
+        }
+
+        .acceptBlock {
+          height: 80%;
+          width: 30%;
+          @include flex(column, space-evenly, center, wrap);
+          position: relative;
+
+          .img {
+            box-sizing: border-box;
+            width: 110%;
+
+          }
+
+          .button {
+            position: relative;
+            right: 45px;
+          }
+        }
+      }
+    }
+    .answer {
+      height: 200px;
+      @include text(15px, 16px, 500);
+      @include flex(row, center, center, wrap);
+      margin-top: 70px;
+      margin-left: 15px;
+    }
+  }
+}

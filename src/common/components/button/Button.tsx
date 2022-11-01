@@ -6,7 +6,7 @@ type ButtonProps = {
     style?: styleOnjType
     onMouseHandler?: () => void
     onMouseLeaveHandler?: () => void
-    onClickHandler?: () => void
+    onClickHandler: (modal: boolean) => void
 }
 
 export type styleOnjType = {
@@ -21,7 +21,7 @@ const Button: React.FC<ButtonProps> = (props) => {
                 <div className={s.button}
                      onMouseEnter={props.onMouseHandler}
                      onMouseLeave={props.onMouseLeaveHandler}
-                     onClick={props.onClickHandler}
+                     onClick={() => props.onClickHandler(true)}
                 >
                     <a href="#" style={props.style}>{props.text} </a>
                 </div>

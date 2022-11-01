@@ -1,17 +1,17 @@
 import React from 'react';
 import s from "./SecondButton.module.scss"
-// @ts-ignore
-import cv from '../../../assets/cv/cvNazaruk.pdf'
+
 
 type ButtonProps = {
     text: string
     type?: "button" | "submit" | "reset" | undefined
+    cv?: any
 }
 
 const SecondButton: React.FC<ButtonProps> = (props) => {
     return (<>
             <div>
-                <a href={cv} download={'cv_Nazaruk'}>
+                <a href={props.cv} download={'cv_Nazaruk'}>
                     <button className={s.button} type={props.type}>{props.text}</button>
                 </a>
             </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import s from "./WhoAmI.module.scss"
 import SecondButton from "../../../common/components/button/SecondButton";
 import ProgressBar from "../../../common/components/progressBar/ProgressBar";
+// @ts-ignore
+import cv from '../../../assets/cv/cvNazaruk.pdf'
 
 type WhoAmIPropsType = {
 }
@@ -15,7 +17,7 @@ const WhoAmI: React.FC<WhoAmIPropsType> = () => {
                     <p> Back to school, I wanted to become a programmer, but due to the lack of information, I decided to go in a different direction.</p>
                     <p> I enjoy what I am doing now and plan to continue developing in this area.</p>
                     <p> I am a current referee of the EHF handball.</p>
-                <SecondButton text={"Download MY CV"}/>
+                <SecondButton text={"Download MY CV"} cv={cv}/>
             </div>
             <div className={s.expert}>
                 <h3 className={s.titleAboutMe}>EXPERT <span className={s.span}>IN</span></h3>

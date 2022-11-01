@@ -19,7 +19,7 @@
   .form {
     width: 65%;
     height: 100%;
-    @include flex(column, center, center,wrap);
+    @include flex(row, center, center,wrap);
     box-sizing: border-box;
     @media screen and (max-width: $mediaWidth) {
       width: 100%;

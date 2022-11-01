@@ -6,17 +6,25 @@
   @include flex(row, center, center, wrap);
   height: 100%;
   width: 100%;
-  background-color: rgba(59, 59, 59, 0.5);
-  z-index: 14;
+  z-index: 11;
+
+  .background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 59, 59, 0.5);
+    position: fixed;
+
+  }
 
   .modalBlock {
     width: 800px;
     min-height: 500px;
     background-color: #f3f3f3;
     position: relative;
+    z-index: 12;
 
-    .closeBlock{
-      &:after{
+    .closeBlock {
+      &:after {
         position: absolute;
         content: "\2716";
         right: -20px;
@@ -24,6 +32,10 @@
         font-weight: 600;
         color: $bgColor;
         cursor: pointer;
+        @media screen and (max-width: $mediaWidth) {
+          right: 15px;
+          top: 15px;
+        }
       }
     }
 
@@ -52,12 +64,23 @@
       height: 320px;
       margin: 40px 30px;
       @include flex(row, flex-start, flex-start, wrap);
+      @media screen and (max-width: $mediaWidth) {
+        height: 380px;
+        @include flex(column, flex-start, flex-start, wrap);
+
+      }
+
 
       .form {
         @include flex(row, flex-start, flex-start, wrap);
-
+        @media screen and (max-width: $mediaWidth) {
+          @include flex(column, flex-start, flex-start, wrap);
+        }
         .all {
           width: 70%;
+          @media screen and (max-width: $mediaWidth) {
+            width: 100%;
+          }
 
           @include flex(column, flex-start, flex-start, wrap);
 
@@ -73,7 +96,10 @@
               color: #999999;
               border: 1px solid #aaa;
               @include text(13px, 13px, 400);
+              @media screen and (max-width: $mediaWidth) {
+                width: 100%;
 
+              }
             }
           }
 
@@ -87,6 +113,10 @@
             font-size: 14px;
             box-sizing: border-box;
             resize: none;
+            @media screen and (max-width: $mediaWidth) {
+              height: 50px;
+              width: 100%;
+            }
           }
         }
 
@@ -95,20 +125,27 @@
           width: 30%;
           @include flex(column, space-evenly, center, wrap);
           position: relative;
+          @media screen and (max-width: $mediaWidth) {
+            height: 80px;
+          }
 
           .img {
             box-sizing: border-box;
             width: 110%;
-
+            @media screen and (max-width: $mediaWidth) {
+              width: 0;
+            }
           }
 
           .button {
             position: relative;
+            top: -30px;
             right: 45px;
           }
         }
       }
     }
+
     .answer {
       height: 200px;
       @include text(15px, 16px, 500);

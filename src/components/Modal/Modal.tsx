@@ -35,8 +35,9 @@ const Modal: FC<ModalPropsType> = ({setModal}) => {
 
     return (
         <div className={s.modalContainer}>
+            <div className={s.background} onClick={() => setModal(false)}></div>
             <Fade top>
-                <div className={s.modalBlock}>
+                <div className={s.modalBlock} >
                     <div className={s.closeBlock} onClick={() => setModal(false)}></div>
                     <div className={s.headModal}>
                         <div><h4 className={s.headerText}>Have an offer?</h4></div>

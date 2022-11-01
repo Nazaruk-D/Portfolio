@@ -147,7 +147,7 @@
           color: $textColor;
           margin: 0;
           text-transform: uppercase;
-          @media screen and (max-width: 1149px) {
+          @media screen and (max-width: $mediaWidth) {
             font-size: 14px;
             line-height: 14px;
           }
@@ -157,7 +157,7 @@
           @include text(14px, 14px, 300);
           text-transform: uppercase;
           color: $textColor;
-          @media screen and (max-width: 1149px) {
+          @media screen and (max-width: $mediaWidth) {
             @include text(12px, 12px, 300);
           }
         }

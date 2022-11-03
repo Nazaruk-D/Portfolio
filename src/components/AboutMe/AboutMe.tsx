@@ -14,14 +14,14 @@ const AboutMe = () => {
                 <Title title={'About me'}/>
                 <div className={s.aboutMe}>
                     <Fade bottom>
-                    <div className={s.infoExpertBlock}>
-                        <WhoAmI/>
-                    </div>
+                        <div className={s.infoExpertBlock}>
+                            <WhoAmI/>
+                        </div>
                     </Fade>
                     <Fade bottom>
-                    <div className={s.eduExp}>
-                        <EduExp/>
-                    </div>
+                        <div className={s.eduExp}>
+                            <EduExp/>
+                        </div>
                     </Fade>
                 </div>
             </div>

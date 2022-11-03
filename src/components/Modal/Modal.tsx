@@ -1,10 +1,12 @@
-import React, {FC, useRef, useState} from 'react';
+import React, {FC, useEffect, useRef, useState} from 'react';
 import s from './Modal.module.scss'
 import emailjs from "@emailjs/browser";
 import SecondButton from "../../common/components/button/SecondButton";
 import img from '../../assets/png/programmer.png'
 // @ts-ignore
 import Fade from 'react-reveal/Fade';
+// @ts-ignore
+import validator from "validator";
 
 
 type ModalPropsType = {
@@ -15,29 +17,52 @@ const Modal: FC<ModalPropsType> = ({setModal}) => {
 
     const form: any = useRef();
     const [sendMessage, setSendMessage] = useState(false)
+    const [nameErr, setNameErr] = useState("")
+    const [emailErr, setEmailErr] = useState("")
+    const [error, setError] = useState(true)
+
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        emailjs.sendForm('service_vubob9f', 'template_8pldnxk', form.current, 'keyVb2YeltdyganAt')
-            .then((result) => {
-                console.log(result.text);
-                form.current.name.value = ""
-                form.current.email.value = ""
-                form.current.subject.value = ""
-                form.current.message.value = ""
-                setSendMessage(true)
-                setTimeout(() => {
-                    setModal(false)
-                }, 5000)
-            }, (error) => {
-                console.log(error.text);
-            });
+        valid(form.current)
     };
+
+    const valid = async (form: any) => {
+        if (form.name.value.length < 3) {
+            setNameErr("Name require")
+            setError(true)
+            return
+        } else {
+            setNameErr("")
+            setError(false)
+        }
+        if (!validator.isEmail(form.email.value)) {
+            setEmailErr("Invalid email address")
+            setError(true)
+        } else {
+            setEmailErr("")
+            setError(false)
+        }
+    }
+
+    useEffect(() => {
+        if (!error) {
+            emailjs.sendForm('service_vubob9f', 'template_8pldnxk', form.current, 'keyVb2YeltdyganAt')
+                .then((result) => {
+                    setSendMessage(true)
+                    setTimeout(() => {
+                        setModal(false)
+                    }, 3000)
+                }, (error) => {
+                    console.log(error.text);
+                });
+        }
+    }, [error])
 
     return (
         <div className={s.modalContainer}>
             <div className={s.background} onClick={() => setModal(false)}></div>
             <Fade top>
-                <div className={s.modalBlock} >
+                <div className={s.modalBlock}>
                     <div className={s.closeBlock} onClick={() => setModal(false)}></div>
                     <div className={s.headModal}>
                         <div><h4 className={s.headerText}>Have an offer?</h4></div>
@@ -60,24 +85,26 @@ const Modal: FC<ModalPropsType> = ({setModal}) => {
                                         />
                                         <input
                                             type="text"
-                                            name="company"
-                                            placeholder={"Company"}
-                                            className={s.input}
-                                        />
-                                    </div>
-                                    <div className={s.errorBlock}>
-                                    </div>
-                                    <div className={s.inputBlock}>
-                                        <input
-                                            type="text"
                                             name="email"
                                             placeholder={"E-mail"}
                                             className={s.input}
                                         />
+                                    </div>
+                                    <div className={s.errorFirst}>
+                                        {nameErr && <div className={s.errorBlock}>{nameErr}</div>}
+                                        {emailErr && <div className={s.errorBlock}>{emailErr}</div>}
+                                    </div>
+                                    <div className={s.inputBlock}>
                                         <input
                                             type="text"
-                                            name="subject"
-                                            placeholder={"Subject"}
+                                            name="company"
+                                            placeholder={"Company name"}
+                                            className={s.input}
+                                        />
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            placeholder={"Phone number"}
                                             className={s.input}
                                         />
                                     </div>
@@ -89,7 +116,6 @@ const Modal: FC<ModalPropsType> = ({setModal}) => {
                                         className={s.textArea}
                                     ></textarea>
                                 </div>
-
                                 <div className={s.acceptBlock}>
                                     <div><img src={img} alt={'img'} className={s.img}/></div>
                                     <div className={s.button}><SecondButton text={"Send"} type={"submit"}/></div>

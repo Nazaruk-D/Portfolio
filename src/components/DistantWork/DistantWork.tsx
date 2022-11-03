@@ -15,18 +15,18 @@ type DistantWorkPropsType = {
 
 const DistantWork: FC<DistantWorkPropsType> = ({setModal}) => {
     return (<>
-        <div className={s.distantBlock}>
-            <div className={`${sContainer.container} ${s.distantContainer}`}>
-                <div>
-                    <Title title={"Considering remote work options"}/>
+            <div className={s.distantBlock}>
+                <div className={`${sContainer.container} ${s.distantContainer}`}>
+                    <div>
+                        <Title title={"Considering remote work options"}/>
+                    </div>
+                    <HeadShake>
+                        <div>
+                            <Button text={"Hire me"} onClickHandler={setModal}/>
+                        </div>
+                    </HeadShake>
                 </div>
-                <HeadShake>
-                <div>
-                    <Button text={"Hire me"} onClickHandler={setModal}/>
-                </div>
-                </HeadShake>
             </div>
-        </div>
         </>
     );
 };

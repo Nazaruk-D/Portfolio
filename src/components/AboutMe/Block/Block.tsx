@@ -21,7 +21,7 @@ const Block: React.FC<BlockPropsType> = ({year, place, title400, title700, descr
                 </div>
             </div>
             <div className={s.mainInformation}>
-                <div><h4 className={s.title400}>{title400}<span className={s.title700}>{title700}</span> </h4></div>
+                <div><h4 className={s.title400}>{title400}<span className={s.title700}>{title700}</span></h4></div>
                 <div className={s.description}>{description}</div>
 
             </div>

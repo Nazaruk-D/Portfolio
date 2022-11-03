@@ -7,24 +7,35 @@
   width: 50%;
   min-height: 50vh;
   background-color: $bgColor;
-  @include flex(column, center, flex-start,wrap);
+  @include flex(column, flex-start, center, wrap);
   box-sizing: border-box;
   @media screen and (max-width: $mediaWidth) {
     width: 100%;
     justify-content: center;
     align-items: center;
     min-height: 60vh;
+    padding-left: 30px;
+  }
+
+  .answer {
+    @include flex(row, center, center, wrap);
+    height: 100%;
+    @media screen and (max-width: $mediaWidth) {
+      @include flex(row, flex-start, center, wrap);
+      margin-left: -30px;
+    }
   }
 
   .form {
     width: 65%;
     height: 100%;
-    @include flex(row, center, center,wrap);
+    position: relative;
+    @include flex(row, flex-start, center, wrap);
     box-sizing: border-box;
     @media screen and (max-width: $mediaWidth) {
       width: 100%;
       justify-content: center;
-      border-right: 1px solid rgba(1,1,1,0);
+      border-right: 1px solid rgba(1, 1, 1, 0);
     }
 
     .firstBlock {
@@ -45,10 +56,23 @@
       }
     }
 
-    .errorBlock {
-      width: 90%;
-      display: flex;
-      justify-content: space-around;
+    .errorFirst {
+      width: 100%;
+      margin-top: 5px;
+      margin-left: 12px;
+      margin-right: 87px;
+      font-size: 14px;
+      color: red;
+      @include flex(row, space-between, center, wrap);
+
+      .errorBlock {
+
+      }
+
+      .errorBlock2 {
+        margin-right: 128px;
+        color: red;
+      }
     }
 
     .secondBlock {
@@ -75,15 +99,16 @@
       box-sizing: border-box;
       resize: none;
     }
+
     .button {
-      @include flex(column, center, flex-start,wrap);
-      width: 90%;
+      @include flex(column, center, flex-start, wrap);
       margin-top: 20px;
       margin-bottom: 30px;
-      .answer{
-        @include text(16px, 18px, 500);
-
-        margin-left: 130px;
+      position: absolute;
+      bottom: 70px;
+      @media screen and (max-width: $mediaWidth) {
+        bottom: 80px;
+        left: 0;
       }
     }
   }

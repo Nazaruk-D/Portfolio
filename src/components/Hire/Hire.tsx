@@ -30,7 +30,7 @@ export const Hire: FC<HirePropsType> = ({setModal}) => {
                 lowlightColor: 0x7f7f7f,
                 baseColor: 0xd2cdcd,
                 zoom: 0.4,
-                speed:0.8,
+                speed: 0.8,
 
             }))
         }

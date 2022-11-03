@@ -14,9 +14,7 @@ import Modal from "../components/Modal/Modal";
 
 
 function App() {
-
     const [modal, setModal] = useState(false)
-
     return (
         <div className="App">
             <ModalArrow/>

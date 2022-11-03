@@ -11,7 +11,6 @@ type HeaderPropsType = {
 }
 
 const Header: FC<HeaderPropsType> = ({setModal}) => {
-
     //background on scrolling
     const [bg, setBg] = useState({})
     const [bgMiniNav, setBgMiniNav] = useState({})
@@ -26,7 +25,6 @@ const Header: FC<HeaderPropsType> = ({setModal}) => {
         const marginMiniNav = {
             marginTop: "5vh",
             transition: "all 0.3s ease 0s",
-            // width: "100%",
         }
         if (window.scrollY > 0) {
             setBg(backgroundWhite)
@@ -39,11 +37,9 @@ const Header: FC<HeaderPropsType> = ({setModal}) => {
 
     //menu for mobile version
     const [toggleMenu, setToggleMenu] = useState<boolean>(false)
-
     const onClickHandler = () => {
         setToggleMenu(!toggleMenu)
     }
-
 
     return (<div id={'header'}>
             <Fade top>
@@ -56,20 +52,14 @@ const Header: FC<HeaderPropsType> = ({setModal}) => {
                                 <div className={s.logoInfo}><strong>Frontend</strong> Developer</div>
                             </div>
                         </div>
-
-
                         {!toggleMenu
                             ? <div className={s.burgerContainer} onClick={onClickHandler}>
                                 <div className={s.burger}><span></span></div>
                             </div>
-
-
                             : <div className={s.burgerContainerActive} onClick={onClickHandler}>
                                 <div className={s.burgerActive}></div>
-
                             </div>
                         }
-
                         <Nav setModal={setModal}/>
                     </div>
                     {toggleMenu &&
@@ -77,7 +67,6 @@ const Header: FC<HeaderPropsType> = ({setModal}) => {
                             <MiniNav/>
                         </div>
                     }
-
                 </div>
             </Fade>
         </div>

@@ -5,18 +5,18 @@ import ProgressBar from "../../../common/components/progressBar/ProgressBar";
 // @ts-ignore
 import cv from '../../../assets/cv/cvNazaruk.pdf'
 
-type WhoAmIPropsType = {
-}
+type WhoAmIPropsType = {}
 
 const WhoAmI: React.FC<WhoAmIPropsType> = () => {
     return (
         <div className={s.infoExpertBlock}>
             <div className={s.info}>
                 <h3 className={s.titleAboutMe}>WHO <span className={s.span}>AM</span> I?</h3>
-                <p>I am a person who loves programming.              </p>
-                    <p> Back to school, I wanted to become a programmer, but due to the lack of information, I decided to go in a different direction.</p>
-                    <p> I enjoy what I am doing now and plan to continue developing in this area.</p>
-                    <p> I am a current referee of the EHF handball.</p>
+                <p>I am a person who loves programming. </p>
+                <p> Back to school, I wanted to become a programmer, but due to the lack of information, I decided to go
+                    in a different direction.</p>
+                <p> I enjoy what I am doing now and plan to continue developing in this area.</p>
+                <p> I am a current referee of the EHF handball.</p>
                 <SecondButton text={"Download MY CV"} cv={cv}/>
             </div>
             <div className={s.expert}>

@@ -13,7 +13,6 @@
     height: 100%;
     background-color: rgba(59, 59, 59, 0.5);
     position: fixed;
-
   }
 
   .modalBlock {
@@ -67,22 +66,20 @@
       @media screen and (max-width: $mediaWidth) {
         height: 380px;
         @include flex(column, flex-start, flex-start, wrap);
-
       }
-
 
       .form {
         @include flex(row, flex-start, flex-start, wrap);
         @media screen and (max-width: $mediaWidth) {
           @include flex(column, flex-start, flex-start, wrap);
         }
+
         .all {
           width: 70%;
+          @include flex(column, flex-start, flex-start, wrap);
           @media screen and (max-width: $mediaWidth) {
             width: 100%;
           }
-
-          @include flex(column, flex-start, flex-start, wrap);
 
           .inputBlock {
             width: 100%;
@@ -98,8 +95,17 @@
               @include text(13px, 13px, 400);
               @media screen and (max-width: $mediaWidth) {
                 width: 100%;
-
               }
+            }
+          }
+
+          .errorFirst {
+            width: 100%;
+            @include flex(row, space-between, center, wrap);
+            .errorBlock {
+              margin-left: 15px;
+              margin-right: 87px;
+              color: red;
             }
           }
 
@@ -123,6 +129,7 @@
         .acceptBlock {
           height: 80%;
           width: 30%;
+          margin-top: 30px;
           @include flex(column, space-evenly, center, wrap);
           position: relative;
           @media screen and (max-width: $mediaWidth) {
@@ -139,8 +146,12 @@
 
           .button {
             position: relative;
-            top: -30px;
+            top: 0px;
             right: 45px;
+            @media screen and (max-width: $mediaWidth) {
+              top: -70px;
+              left: -50px;
+            }
           }
         }
       }

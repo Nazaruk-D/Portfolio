@@ -30,7 +30,6 @@ const Project: React.FC<ProjectPropsType> = ({title, description, link, style, l
                         </div>
                     </div>
                 </div>
-
                 <div className={s.textArea}>
                     <div className={s.nameProject}>{title}</div>
                     <div className={s.description}>{description}</div>

@@ -52,17 +52,17 @@ const ContactDescription = () => {
     return (
         <div className={s.contactsBlock}>
             <Fade left>
-            <div className={s.contacts}>
-                <h2 className={s.title}>Contact address</h2>
-                {
-                    contacts.map((c, index) => <Contact key={index} icon={c.icon} description={c.description}/>)
-                }
-                <div className={s.links}>
+                <div className={s.contacts}>
+                    <h2 className={s.title}>Contact address</h2>
                     {
-                        social.map((s, index) => <Contact key={index} icon={s.icon} link={s.link}/>)
+                        contacts.map((c, index) => <Contact key={index} icon={c.icon} description={c.description}/>)
                     }
+                    <div className={s.links}>
+                        {
+                            social.map((s, index) => <Contact key={index} icon={s.icon} link={s.link}/>)
+                        }
+                    </div>
                 </div>
-            </div>
             </Fade>
         </div>
     );

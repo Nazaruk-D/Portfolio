@@ -9,11 +9,12 @@ export type ContactPropsType = {
 }
 
 const Contact: React.FC<ContactPropsType> = ({icon, description, link}) => {
-
     return (
         <div className={s.ContactContainer}>
             {link
-                ? <a href={link}><div className={s.logoLink}>{icon}</div></a>
+                ? <a href={link}>
+                    <div className={s.logoLink}>{icon}</div>
+                </a>
                 : <div className={s.logo}>{icon}</div>
             }
             <div className={s.text}>{description}</div>

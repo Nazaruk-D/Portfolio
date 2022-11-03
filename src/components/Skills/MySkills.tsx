@@ -56,20 +56,20 @@ export const MySkills = () => {
         }
     ]
 
-    const color = {color:"#f9f9f9"}
+    const color = {color: "#f9f9f9"}
 
     return <div className={s.intermediateBlock} id={'skills'}>
         <div className={s.title}>
             <Title title={"My skills"} color={color}/>
         </div>
-        <div className={s.logoBlock}>
-            {
-                skills.map((m,i) =>
-                    <Fade bottom>
-                    <Skill key={i} skillName={m.skill} icon={m.icon} svgIcon={m.svg}/>
-                    </Fade>
-                )
-            }
-        </div>
+        <Fade bottom>
+            <div className={s.logoBlock}>
+                {
+                    skills.map((m, index) =>
+                        <Skill key={index} skillName={m.skill} icon={m.icon} svgIcon={m.svg}/>
+                    )
+                }
+            </div>
+        </Fade>
     </div>
 }

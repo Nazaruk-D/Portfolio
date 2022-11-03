@@ -41,7 +41,7 @@ const ContactForm = () => {
 
     useEffect(() => {
         if (!error) {
-            emailjs.sendForm('service_vubob9f', 'template_8pldnxk', form.current, 'keyVb2YeltdyganAt')
+            emailjs.sendForm('service_vubob9f', 'template_tpuv1nf', form.current, 'keyVb2YeltdyganAt')
                 .then((result) => {
                     setSendMessage(true)
                 }, (error) => {

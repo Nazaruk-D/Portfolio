@@ -56,7 +56,7 @@ const Modal: FC<ModalPropsType> = ({setModal}) => {
                     console.log(error.text);
                 });
         }
-    }, [error])
+    }, [error, setModal])
 
     return (
         <div className={s.modalContainer}>

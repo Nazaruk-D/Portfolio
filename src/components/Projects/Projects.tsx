@@ -3,9 +3,9 @@ import s from "./Projects.module.scss"
 import sContainer from "../../assets/styles/Container.module.css";
 import Project from "./Project/Project";
 import Title from "../../common/components/title/Title";
-import socialImage from "../../assets/img/social.jpeg"
-import todoImage from "../../assets/img/todo.jpeg"
-import nonameImage from "../../assets/img/noname.jpg"
+import socialImage from "../../assets/png/socialNetwork.png"
+import todoImage from "../../assets/png/todolist.png"
+import nonameImage from "../../assets/png/cards.png"
 
 
 const Projects = () => {
@@ -27,7 +27,7 @@ const Projects = () => {
                 <div className={s.projects}>
                     <Project
                         style={social}
-                        link={"https://github.com/Nazaruk-D/Samurai-way"}
+                        link={"https://nazaruk-d.github.io/Samurai-way/#/"}
                         linkRep={"https://github.com/Nazaruk-D/Samurai-way"}
                         title={"Social Network"}
                         description={"A social networking is an online platform which people use to build social networks or social relationships with other people who share similar personal or career content, interests, activities, backgrounds or real-life connections."}/>
@@ -39,10 +39,10 @@ const Projects = () => {
                         description={"Todo List is a list of things you need to do or want to do. Traditionally, they are written on a piece of paper and organized in order of priority. When a task is completed, it is usually crossed off the list."}/>
                     <Project
                         style={noname}
-                        link={"https://nazaruk-d.github.io/Counter"}
-                        linkRep={"https://github.com/Nazaruk-D/Counter"}
-                        title={"Counter"}
-                        description={"A social networking is an online platform which people use to build social networks or social relationships with other people who share similar personal or career content, interests, activities, backgrounds or real-life connections."}/>
+                        link={"https://nazaruk-d.github.io/FridayProject/"}
+                        linkRep={"https://github.com/Nazaruk-D/FridayProject"}
+                        title={"Cards"}
+                        description={"Cards to study. The user selects a deck and starts the learning process. User can create your own decks and add cards there. User can also find a deck that interests you and study it. (Team project)"}/>
                 </div>
 
             </div>

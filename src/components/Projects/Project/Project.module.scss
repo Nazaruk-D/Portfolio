@@ -55,6 +55,7 @@
                 cursor: pointer;
                 user-select: none;
                 text-decoration: none;
+                width: 100px;
                 &:hover{
                     background-color: $textColor;
                     border-color: $textColor;

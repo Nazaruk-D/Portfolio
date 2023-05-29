@@ -101,13 +101,13 @@
     }
 
     .button {
-      @include flex(column, center, flex-start, wrap);
-      margin-top: 20px;
-      margin-bottom: 30px;
+      //@include flex(column, center, flex-start, wrap);
+      //margin-top: 20px;
+      margin-bottom: 50px;
       position: absolute;
       bottom: 70px;
       @media screen and (max-width: $mediaWidth) {
-        bottom: 80px;
+        bottom: 10px;
         left: 0;
       }
     }

@@ -1,50 +1,51 @@
 @import '../../../common/styles/sass/variables';
 
 .miniNav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    background-color: white;
-    padding-left: 10px;
-    box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: white;
+  padding-left: 10px;
+  box-sizing: border-box;
 
-    .activeLink {
-        position: relative;
-        width: 25px;
-        height: 14px;
+  .activeLink {
+    position: relative;
+    width: 25px;
+    height: 14px;
 
-        &:after {
-            content: "";
-            background-color: $textColor;
-            position: absolute;
-            width: 100%;
-            height: 1.5px;
-            left: 0;
-            top: 7px;
-            right: 0;
-            bottom: 0;
-            transition: all 0.3s ease 0s;
-        }
+    &:after {
+      content: "";
+      background-color: $textColor;
+      position: absolute;
+      width: 100%;
+      height: 1.5px;
+      left: 0;
+      top: 7px;
+      right: 0;
+      bottom: 0;
+      transition: all 0.3s ease 0s;
     }
+  }
 
-    &li {
-        padding: 15px 0 10px;
-        position: relative;
-        display: block;
+  &li {
+    padding: 15px 0 10px;
+    position: relative;
+    display: block;
 
-    }
-    & li a {
-        color: $textColor;
-        text-transform: uppercase;
-        outline: 0;
-        line-height: 40px;
-        text-decoration: none;
-        font-family: Raleway, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 15px;
-    }
+  }
+
+  & li a {
+    color: $textColor;
+    text-transform: uppercase;
+    outline: 0;
+    line-height: 40px;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+  }
 }

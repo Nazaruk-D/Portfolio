@@ -18,15 +18,16 @@ const Home: FC<HomePropsType> = ({setModal}) => {
                     <Fade left>
                         <div className={s.greetings}><strong>Hi there</strong></div>
                         <div className={s.name}><h2><strong>I</strong> am Dmitry Nazaruk</h2></div>
-                        <div className={s.front}><strong>
-                            <ReactTypingEffect text={"A front-end developer"}/></strong>
+                        <div className={s.front}>
+                            <strong>
+                                <ReactTypingEffect text={"A front-end developer"}/>
+                            </strong>
                         </div>
                     </Fade>
                     <Fade bottom>
                         <Button text={"LET'S TALK"} onClickHandler={setModal}/>
                     </Fade>
                 </div>
-
             </div>
         </div>
     );

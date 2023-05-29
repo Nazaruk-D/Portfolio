@@ -18,14 +18,12 @@ const EduExp: React.FC<ExperiencePropsType> = () => {
 
             <div className={s.expContainer}>
                 <h3 className={s.title}>Experience</h3>
-                <Block year={"09-12/2022"} place={"Part time"} title400={"Educational "} title700={"cards"}
-                       description={"Stack: TypeScript, React, Redux, Redux-thunk, Router-dom, Axios, Formik, Team development, Bug fixing"}/>
-                <Block year={"06-09/2022"} place={"Part time"} title400={"To do  "} title700={"list"}
-                       description={"Stack: TypeScript, React, Redux Toolkit, Redux-thunk, Router-dom, Axios, MUI, Formik, StoryBook, Covering code with unit tests, Bug fixing"}/>
-                <Block year={"03-06/2022"} place={"Part time"} title400={"Social "} title700={"Network"}
-                       description={"Stack: TypeScript, React, Redux, Redux-thunk, Router-dom, Axios, MUI, Formik, Bug fixing"}/>
+                <Block year={"03/2023 - 05/2023"} place={"Internship"} title400={""} title700={"Itransition"}
+                       description={"Created SPA with React, TypeScript, React-redux, Redux-toolkit, RTK Query, MUI.Developed a custom server-side backend using Node.js and Express.js, working with databases including MySQL and PostgreSQL for efficient data storage and management"}/>
+                <Block year={"05/2022 - 02/2023"} place={"Part time"} title400={"Front-end "} title700={"Developer"}
+                       description={"Created SPA with React, React-redux, Redux-toolkit, TypeScrip. Performed code review and fixed bugs. Worked in a team."}/>
                 <Block year={"2018-2022"} place={"SIMStrade"} title400={"Deputy "} title700={"Director"}
-                       description={"Work with suppliers and buyers at high levels in the field of supply and installation of loading systems and gates of all types for industrial facilities (logistics centers, warehouses, shops). Full transaction support. Control at all stages of delivery."}/>
+                       description={"Work with suppliers and buyers at high levels in the field of supply and installation of loading systems for industrial facilities (logistics centers, warehouses, shops). Full transaction support. Control at all stages of delivery."}/>
             </div>
         </div>
     );

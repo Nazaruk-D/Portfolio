@@ -21,9 +21,9 @@ const Project: React.FC<ProjectPropsType> = ({title, description, link, style, l
                 <div className={s.imgContainer} style={style}>
                     <div className={s.repo}>
                         <h2>{title}</h2>
-                        <p>To view the project or repository, follow the links</p>
+                        <p>To view the project or repository, follow the links.</p>
                         <div>
-                            <a href={link} target="_blank" className={s.link} data-toggle="modal">project</a>
+                            <a href={link} target="_blank" className={s.link} data-toggle="modal">demo</a>
                         </div>
                         <div>
                             <a href={linkRep} target="_blank" className={s.link} data-toggle="modal">repository</a>

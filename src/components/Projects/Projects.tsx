@@ -3,21 +3,21 @@ import s from "./Projects.module.scss"
 import sContainer from "../../assets/styles/Container.module.css";
 import Project from "./Project/Project";
 import Title from "../../common/components/title/Title";
-import socialImage from "../../assets/png/socialNetwork.png"
-import todoImage from "../../assets/png/todolist.png"
-import nonameImage from "../../assets/png/cards.png"
+import teslaPNG from "../../assets/png/tesla.png"
+import reviewPNG from "../../assets/png/reviewManager.png"
+import cardsPNG from "../../assets/png/cards.png"
 
 
 const Projects = () => {
 
-    const social = {
-        backgroundImage: `url(${socialImage})`
+    const review = {
+        backgroundImage: `url(${reviewPNG})`
     }
-    const todo = {
-        backgroundImage: `url(${todoImage})`
+    const tesla = {
+        backgroundImage: `url(${teslaPNG})`
     }
-    const noname = {
-        backgroundImage: `url(${nonameImage})`
+    const cards = {
+        backgroundImage: `url(${cardsPNG})`
     }
 
     return (
@@ -26,21 +26,21 @@ const Projects = () => {
                 <Title title={"My projects"}/>
                 <div className={s.projects}>
                     <Project
-                        style={social}
-                        link={"https://nazaruk-d.github.io/Samurai-way/#/"}
-                        linkRep={"https://github.com/Nazaruk-D/Samurai-way"}
-                        title={"Social Network"}
-                        description={"A social networking is an online platform which people use to build social networks or social relationships with other people who share similar personal or career content, interests, activities, backgrounds or real-life connections."}/>
+                        style={review}
+                        link={"https://review-manager-rust.vercel.app/"}
+                        linkRep={"https://github.com/Nazaruk-D/Review-manager"}
+                        title={"Review-manager"}
+                        description={"The purpose of Review-manager is to provide users with a convenient platform for writing and organizing reviews. The app allows users to create review entries, add tags and categories to their reviews, and sort and search through their reviews based on various criteria."}/>
                     <Project
-                        style={todo}
-                        link={"https://nazaruk-d.github.io/ToDoList/"}
-                        linkRep={"https://github.com/Nazaruk-D/ToDoList"}
-                        title={"Todolist"}
-                        description={"Todo List is a list of things you need to do or want to do. Traditionally, they are written on a piece of paper and organized in order of priority. When a task is completed, it is usually crossed off the list."}/>
+                        style={tesla}
+                        link={"https://nazaruk-d.github.io/CarShop/"}
+                        linkRep={"https://github.com/Nazaruk-D/CarShop"}
+                        title={"Tesla"}
+                        description={"This project is a replica of the website www.tesla.com. The emphasis was placed on recreating an exact copy of the website as it existed at the time of its creation. Additionally, the server side functionality was implemented, including registration capabilities."}/>
                     <Project
-                        style={noname}
-                        link={"https://nazaruk-d.github.io/FridayProject/"}
-                        linkRep={"https://github.com/Nazaruk-D/FridayProject"}
+                        style={cards}
+                        link={"https://nazaruk-d.github.io/EducationCards/"}
+                        linkRep={"https://github.com/Nazaruk-D/EducationCards"}
                         title={"Cards"}
                         description={"Cards to study. The user selects a deck and starts the learning process. User can create your own decks and add cards there. User can also find a deck that interests you and study it. (Team project)"}/>
                 </div>

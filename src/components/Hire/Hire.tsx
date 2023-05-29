@@ -38,6 +38,7 @@ export const Hire: FC<HirePropsType> = ({setModal}) => {
             if (vantaEffect) vantaEffect.destroy()
         }
     }, [vantaEffect])
+
     return <div className={s.hire}>
         <div className={s.distanceWork}>
             <DistantWork setModal={setModal}/>

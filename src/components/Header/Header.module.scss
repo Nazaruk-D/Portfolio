@@ -16,6 +16,7 @@
     width: 70%;
     @include flex(row, center, center, nowrap);
     position: absolute;
+
     @media screen and (max-width: $mediaWidth) {
       width: 100%;
       justify-content: space-around;
@@ -34,7 +35,6 @@
       .burger {
         display: none;
         @media screen and (max-width: $mediaWidth) {
-          //border: 1px solid red;
           margin: 4px;
           display: block;
           position: relative;
@@ -81,7 +81,6 @@
       .burgerActive {
         display: none;
         @media screen and (max-width: $mediaWidth) {
-          //border: 1px solid red;
           margin: 4px;
           display: block;
           position: relative;
@@ -138,7 +137,6 @@
 
       .textLogo {
         @media screen and (max-width: $mediaWidth) {
-          //width: 55px;
         }
 
         .logoName {

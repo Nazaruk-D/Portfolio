@@ -37,6 +37,7 @@
     position: relative;
     width: 25px;
     height: 14px;
+    cursor: pointer;
 
     &:after {
       content: "";
@@ -49,6 +50,7 @@
       right: 0;
       bottom: 0;
       transition: all 0.3s ease 0s;
+      cursor: pointer;
     }
   }
 
@@ -56,11 +58,11 @@
     padding: 15px 0 10px;
     position: relative;
     display: block;
+    cursor: pointer;
 
   }
 
   & li a {
-    /*position: relative;*/
     color: $textColor;
     text-transform: uppercase;
     outline: 0;
@@ -70,44 +72,11 @@
     font-weight: 400;
     font-style: normal;
     font-size: 15px;
-    //@media screen and (max-width: 1149px) {
-    //    font-size: 14px;
-    //}
+    cursor: pointer;
+
   }
 
   .button {
     align-content: center;
   }
 }
-
-
-/*.nav li a::before {*/
-/*    content: " ";*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    margin: 0 auto;*/
-/*    bottom: 32px;*/
-/*    width: 100%;*/
-/*    height: 1px;*/
-/*    background-color: #303030;*/
-/*    transform: translateX(-299px);*/
-/*    transition-duration: .3s;*/
-/*    -webkit-transition: width .25s ease-in-out;*/
-/*    -o-transition: width .25s ease-in-out;*/
-/*    transition: width .25s ease-in-out;*/
-/*}*/
-
-/*.nav li a::before {*/
-/*    content: " ";*/
-/*    position: absolute;*/
-/*    left: 0;*/
-/*    bottom: 10px;*/
-/*    !*width: 0;*!*/
-/*    height: 1px;*/
-/*    width: 100%;*/
-/*    !*background-color: #303030;*!*/
-/*    !*-webkit-transition: width .25s ease-in-out;*!*/
-/*    !*-o-transition: width .25s ease-in-out;*!*/
-/*    !*transition: width .25s ease-in-out;*!*/
-/*}*/

@@ -11,7 +11,6 @@ type HeaderPropsType = {
 }
 
 const Header: FC<HeaderPropsType> = ({setModal}) => {
-    //background on scrolling
     const [bg, setBg] = useState({})
     const [bgMiniNav, setBgMiniNav] = useState({})
 
@@ -35,7 +34,6 @@ const Header: FC<HeaderPropsType> = ({setModal}) => {
         }
     })
 
-    //menu for mobile version
     const [toggleMenu, setToggleMenu] = useState<boolean>(false)
     const onClickHandler = () => {
         setToggleMenu(!toggleMenu)

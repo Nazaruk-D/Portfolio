@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ef9e8ff6.css",
+    "main.css": "/Portfolio/static/css/main.7b7c2575.css",
     "main.js": "/Portfolio/static/js/main.7921eec6.js",
     "static/js/787.28cb0dcd.chunk.js": "/Portfolio/static/js/787.28cb0dcd.chunk.js",
     "static/media/tesla.png": "/Portfolio/static/media/tesla.c27408a04157fc95a33d.png",
@@ -18,12 +18,12 @@
     "static/media/TS.svg": "/Portfolio/static/media/TS.3c987724725a0931453b20f1eaf6f5ed.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/storybook.svg": "/Portfolio/static/media/storybook.d09e74c8aa119cdd87a9699bccf803db.svg",
-    "main.ef9e8ff6.css.map": "/Portfolio/static/css/main.ef9e8ff6.css.map",
+    "main.7b7c2575.css.map": "/Portfolio/static/css/main.7b7c2575.css.map",
     "main.7921eec6.js.map": "/Portfolio/static/js/main.7921eec6.js.map",
     "787.28cb0dcd.chunk.js.map": "/Portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef9e8ff6.css",
+    "static/css/main.7b7c2575.css",
     "static/js/main.7921eec6.js"
   ]
 }
